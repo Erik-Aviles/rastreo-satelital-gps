@@ -1,21 +1,23 @@
 import React from "react";
+import Header from "../components/Header";
 import Layout from "../containers/Layout";
-import RegisterUser from "../components/RegisterUser";
-// import Login from "../components/Login";
+import MenuDesplegable from "../containers/MenuDesplegable";
 // import Home from "../pages/Home";
+// import Login from "../components/Login";
+// import RegisterUser from "../components/RegisterUser";
+// import RegisterDevice from "../components/RegisterDevice";
 import "../styles/App.css";
-import RegisterDevice from "../components/RegisterDevice";
 
 const App = () => {
   return (
-   
-      <Layout className='Layout'>
-        {/* <Home /> */}
-        {/* <Login /> */}
-        {/* <RegisterUser /> */}
-        <RegisterDevice />
-      </Layout>
-
+    <Layout className="Layout">
+      <Header />
+      {/* <Home /> */}
+      {/* <Login /> */}
+      {/* <RegisterUser /> */}
+      {/* <RegisterDevice /> */}
+      <MenuDesplegable />
+    </Layout>
   );
 };
 
