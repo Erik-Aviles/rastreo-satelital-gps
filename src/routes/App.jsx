@@ -1,12 +1,18 @@
-import React from 'react';
-import  '../styles/App.css'
+import React from "react";
+import Login from "../components/Login";
+import Layout from "../containers/Layout";
+// import Home from "../pages/Home";
+import "../styles/App.css";
 
 const App = () => {
   return (
     <div>
-      <h1 style={{color: 'red'}}>App</h1>
+      <Layout>
+        {/* <Home /> */}
+        <Login />
+      </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
