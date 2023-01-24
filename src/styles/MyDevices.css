@@ -1,0 +1,6 @@
+.MyDevices-items{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    gap: 5px;
+}

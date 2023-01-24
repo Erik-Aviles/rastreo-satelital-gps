@@ -19,8 +19,8 @@ const Login = () => {
           <input type="password" id="password" placeholder="**********" />
           <div className="Login_content--select-one">
             <div className="Login_content-2--rigth">
-              <input type="radio" id="radio" />
-              <label htmlFor="radio">Recordarme </label>
+              <input type="checkbox" id="checkbox" />
+              <label htmlFor="checkbox">Recordarme </label>
             </div>
             <div className="Login_content-2--left">
               <a href="/">
@@ -35,6 +35,23 @@ const Login = () => {
           <a href="/"> Registrate</a>
         </div>
       </section>
+      {/* <form>
+        <fieldset>
+          <legend>Información Personal</legend>
+          Nombre: <input name="nombre" type="text" tabindex="1" />
+          Apellidos: <input name="apellidos" type="text" tabindex="2" />
+        </fieldset>
+
+        <fieldset>
+          <legend>edad</legend>
+          <input type="checkbox" tabindex="20" name="edad" value="20-39" />{" "}
+          20-39
+          <input type="checkbox" tabindex="21" name="edad" value="40-59" />{" "}
+          40-59
+          <input type="checkbox" tabindex="22" name="edad" value="60-79" />{" "}
+          60-79
+        </fieldset>
+      </form> */}
     </>
   );
 };
