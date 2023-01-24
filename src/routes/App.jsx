@@ -1,17 +1,21 @@
 import React from "react";
-import Login from "../components/Login";
 import Layout from "../containers/Layout";
+import RegisterUser from "../components/RegisterUser";
+// import Login from "../components/Login";
 // import Home from "../pages/Home";
 import "../styles/App.css";
+import RegisterDevice from "../components/RegisterDevice";
 
 const App = () => {
   return (
-    <div>
-      <Layout>
+   
+      <Layout className='Layout'>
         {/* <Home /> */}
-        <Login />
+        {/* <Login /> */}
+        {/* <RegisterUser /> */}
+        <RegisterDevice />
       </Layout>
-    </div>
+
   );
 };
 
