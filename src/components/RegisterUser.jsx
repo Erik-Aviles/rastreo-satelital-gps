@@ -1,5 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import SelecctList from "./SelecctList";
+
+const devicesType = ['auto', 'Carro', 'Otros']
 
 const RegisterUser = () => {
   return (
@@ -56,13 +59,13 @@ const RegisterUser = () => {
             name="confir-password"
             placeholder="**********"
           />
-          <label htmlFor="device">Dispositivo</label>
-          <select>
+          <SelecctList title='dispositivo' options={devicesType}/>
+          {/* <select>
             <option>Seleccionar</option>
             <option>Moto</option>
             <option>Carro</option>
             <option>Otros</option>
-          </select>
+          </select> */}
 
 
           <button type="button">Registrar</button>

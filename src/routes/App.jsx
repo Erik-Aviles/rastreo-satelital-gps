@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Layout from "../containers/Layout";
+import RouteHistory from "../pages/RouteHistory";
 // import MyDevices from "../containers/MyDevices";
 // import MenuDesplegable from "../containers/MenuDesplegable";
 // import Home from "../pages/Home";
@@ -19,6 +20,7 @@ const App = () => {
       {/* <RegisterDevice /> */}
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}
+      <RouteHistory />
     </Layout>
   );
 };

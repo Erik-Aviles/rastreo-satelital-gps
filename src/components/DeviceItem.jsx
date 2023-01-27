@@ -3,7 +3,7 @@ import "../styles/DeviceItem.css";
 
 const DeviceItem = () => {
   return (
-    <section className="DeviceItem">
+    <article className="DeviceItem">
       <div >
         <h4>Mazda</h4>
         <p>ABC-123</p>
@@ -13,7 +13,7 @@ const DeviceItem = () => {
         </div>
       </div>
       <button>Mostrar</button>
-    </section>
+    </article>
   );
 };
 
