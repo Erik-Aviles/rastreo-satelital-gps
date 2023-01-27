@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import SelecctList from "./SelecctList";
+import TitleH2 from "./TitleH2";
 
-const devicesType = ['auto', 'Carro', 'Otros']
+const devicesType = ["auto", "Carro", "Otros"];
 
 const RegisterUser = () => {
   return (
@@ -14,12 +15,17 @@ const RegisterUser = () => {
         <figure className="RegisterUser-container_logo">
           <img className="logo-image" src="" alt="Soy un logo" />
         </figure>
-        <h2 className="RegisterUser-title subtitle">Registro</h2>
+        <TitleH2>Registro de Usuario</TitleH2>
         <form className="RegisterUser_content-form">
           <div>
             <div>
               <label htmlFor="name">Nombre</label>
-              <input type="text" id="name" name="" placeholder="Escribir nombre" />
+              <input
+                type="text"
+                id="name"
+                name=""
+                placeholder="Escribir nombre"
+              />
             </div>
             <div>
               <label htmlFor="apellido">Apellidos</label>
@@ -32,11 +38,12 @@ const RegisterUser = () => {
             </div>
           </div>
           <label htmlFor="email">Email</label>
-          <input 
-            type="email" 
-            id="email" 
+          <input
+            type="email"
+            id="email"
             name="email"
-            placeholder="hello@dayli.com" />
+            placeholder="hello@dayli.com"
+          />
 
           <label htmlFor="adrdress">Direccion</label>
           <input
@@ -47,11 +54,12 @@ const RegisterUser = () => {
           />
 
           <label htmlFor="password">Contraseña</label>
-          <input 
-            type="password" 
-            id="password" 
+          <input
+            type="password"
+            id="password"
             name="password"
-            placeholder="**********" />
+            placeholder="**********"
+          />
           <label htmlFor="confir-password">Confirmar Contraseña</label>
           <input
             type="password"
@@ -59,14 +67,13 @@ const RegisterUser = () => {
             name="confir-password"
             placeholder="**********"
           />
-          <SelecctList title='dispositivo' options={devicesType}/>
+          <SelecctList title="dispositivo" options={devicesType} />
           {/* <select>
             <option>Seleccionar</option>
             <option>Moto</option>
             <option>Carro</option>
             <option>Otros</option>
           </select> */}
-
 
           <button type="button">Registrar</button>
         </form>

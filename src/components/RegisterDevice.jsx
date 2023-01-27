@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import TitleH2 from "./TitleH2";
 
 const RegisterDevice = () => {
   return (
@@ -11,7 +12,7 @@ const RegisterDevice = () => {
         <figure className="RegisterUser-container_logo">
           <img className="logo-image" src="" alt="Soy un logo" />
         </figure>
-        <h2 className="RegisterUser-title subtitle">Registro de dispositivo</h2>
+        <TitleH2>Registro de dispositivo</TitleH2>
         <form className="RegisterUser_content-form">
           <label htmlFor="name">Nombre</label>
           <input

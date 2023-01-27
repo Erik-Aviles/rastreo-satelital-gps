@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import TitleH2 from "./TitleH2";
 
 const Login = () => {
   return (
@@ -11,6 +12,7 @@ const Login = () => {
         <figure className="Login-container_logo">
           <img className="logo-image" src="" alt="Soy un logo" />
         </figure>
+        <TitleH2>Login</TitleH2>
         <h2 className="Login-title subtitle">Login</h2>
         <form className="Login_content-form">
           <label htmlFor="email">Email</label>

@@ -1,10 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import ButtonSalir from "../components/ButtonSalir";
 import RouteHistoryTable from "../components/RouteHistoryTable";
 import SelecctList from "../components/SelecctList";
+import TitleH2 from "../components/TitleH2";
 
-const devices = ['AEI123', 'ZYH463' , 'USD098']
-const period = ['Hoy','Ayer', 'Semana actual', 'Ultimo mes']
+const devices = ["AEI123", "ZYH463", "USD098"];
+const period = ["Hoy", "Ayer", "Semana actual", "Ultimo mes"];
 const RouteHistory = () => {
   return (
     <>
@@ -12,33 +14,11 @@ const RouteHistory = () => {
         <title>Historial- Rastreo Satelital</title>
       </Helmet>
       <section className="Route-History">
-        <div>
-          <h2>Route history</h2>
-        </div>
+        <TitleH2>Route history</TitleH2>
         <div className="select-device">
           <div className="choose-option">
-            <SelecctList 
-              title="device" 
-              options={devices} 
-            />
-            <SelecctList 
-              title="periodo" 
-              options={period} 
-            />
-            {/* <select name="device" id="">
-              <option value="1">Seleccionar</option>
-              <option value="1">AEI123</option>
-              <option value="2">ZYH463</option>
-              <option value="3">USD098</option>
-            </select>
-            <select name="period" id="">
-              <option value="1">Seleccionar</option>
-              <option value="1">Hoy</option>
-              <option value="2">Ayer</option>
-              <option value="3">Semana actual</option>
-              <option value="4">Semana pasada</option>
-              <option value="4">Ultimo mes</option>
-            </select> */}
+            <SelecctList title="device" options={devices} />
+            <SelecctList title="periodo" options={period} />
             <button type="button">Mostrar</button>
           </div>
           <div className="displays-selection">
@@ -54,7 +34,7 @@ const RouteHistory = () => {
           <button>Reporte</button>
           {/* mensaje via whatsApp */}
           <button>Limpiar</button>
-          <button>X</button>
+          <ButtonSalir>X</ButtonSalir>
         </div>
       </section>
     </>
