@@ -1,6 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import ButtonSalir from "./ButtonSalir";
+import SelecctList from "./SelecctList";
 import TitleH2 from "./TitleH2";
+
+const tipoCombustible  = ['Gasolina', 'Disel', 'Eléctrico', 'Otro']
 
 const RegisterDevice = () => {
   return (
@@ -8,12 +12,12 @@ const RegisterDevice = () => {
       <Helmet>
         <title>Registro de dispositivo - Rastreo Satelital</title>
       </Helmet>
-      <section className="RegisterUser">
-        <figure className="RegisterUser-container_logo">
+      <section className="Register-User">
+        <figure className="Register-User-container_logo">
           <img className="logo-image" src="" alt="Soy un logo" />
         </figure>
         <TitleH2>Registro de dispositivo</TitleH2>
-        <form className="RegisterUser_content-form">
+        <form className="Register-User_content-form">
           <label htmlFor="name">Nombre</label>
           <input
             type="text"
@@ -27,7 +31,7 @@ const RegisterDevice = () => {
             type="text"
             id="placa"
             name="placa"
-            placeholder="Ejemplo 'ABC123'"
+            placeholder="Ej: 'ABC123'"
             required
           />
           <label htmlFor="gps-imei">Imei del gps</label>
@@ -35,7 +39,7 @@ const RegisterDevice = () => {
             type="text"
             id="gps-imei"
             name="gps-imei"
-            placeholder="Ejemplo '0987654321'"
+            placeholder="Ej: '0987654321'"
             required
           />
 
@@ -44,7 +48,7 @@ const RegisterDevice = () => {
             type="email"
             id="modelo"
             name="modelo"
-            placeholder="Ejemplo 'Mazda'"
+            placeholder="Ej: 'Mazda'"
           />
 
           <label htmlFor="color">Color</label>
@@ -60,26 +64,28 @@ const RegisterDevice = () => {
             type="password"
             id="year"
             name="year"
-            placeholder="*Ejemplo ´2020´"
+            placeholder="*Ej: ´2020´"
           />
           <label htmlFor="chasis">Chasis</label>
           <input
             type="password"
             id="chasis"
             name="chasis"
-            placeholder="*Ejemplo ´1234567890´"
+            placeholder="*Ej: ´1234567890´"
           />
-
+          <SelecctList title= 'Combustible' options={tipoCombustible}/>
+{/* 
           <label htmlFor="chasis">Combustible</label>
           <select>
             <option>Seleccionar</option>
             <option>gasolina</option>
             <option>disel</option>
             <option>Otros</option>
-          </select>
+          </select> */}
 
           <button type="button">Registrar</button>
         </form>
+        <ButtonSalir>X</ButtonSalir>
       </section>
     </>
   );

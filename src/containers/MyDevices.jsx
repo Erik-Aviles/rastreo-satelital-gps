@@ -10,7 +10,6 @@ const MyDevices = () => {
     <section className="MyDevices">
       <div>
         <TitleH2>Mis Dispositivos</TitleH2>
-        <h3>Mis Dispositivos</h3>
         <div className="MyDevices-items">
           <DeviceItem />
           <DeviceItem />
