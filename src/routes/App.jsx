@@ -7,7 +7,7 @@ import Header from "../components/Header";
 // import Device from "../pages/Device";
 // import AppInformation from "../pages/AppInformation";
 // import Alerts from "../containers/Alerts";
-// import RouteHistory from "../pages/RouteHistory";
+import RouteHistory from "../containers/RouteHistory";
 // import MyDevices from "../containers/MyDevices";
 // import MenuDesplegable from "../containers/MenuDesplegable";
 // import Home from "../pages/Home";
@@ -28,7 +28,7 @@ const App = () => {
       {/* <RegisterDevice /> */}
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}
-      {/* <RouteHistory /> */}
+      <RouteHistory />
       {/* <Alerts /> */}
       {/* <Profile /> */}
       {/* <AppInformation /> */}
