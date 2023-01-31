@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../containers/Layout";
 import Header from "../components/Header";
+// import Home from "../pages/Home";
 // import Mapa from "../containers/Mapa";
 // import CurrentDevice from "../components/CurrentDevice.jsx";
 // import Mensaje from "../components/Mensaje";
 // import Device from "../pages/Device";
 // import AppInformation from "../pages/AppInformation";
 // import Alerts from "../containers/Alerts";
-import RouteHistory from "../containers/RouteHistory";
+// import RouteHistory from "../containers/RouteHistory";
 // import MyDevices from "../containers/MyDevices";
 // import MenuDesplegable from "../containers/MenuDesplegable";
-// import Home from "../pages/Home";
 // import Login from "../components/Login";
 // import RegisterUser from "../components/RegisterUser";
 // import RegisterDevice from "../components/RegisterDevice";
@@ -25,10 +25,10 @@ const App = () => {
       {/* <Home /> */}
       {/* <Login /> */}
       {/* <RegisterUser /> */}
-      {/* <RegisterDevice /> */}
+      {/* <RegisterDevice />  */}
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}
-      <RouteHistory />
+      {/* <RouteHistory /> */}
       {/* <Alerts /> */}
       {/* <Profile /> */}
       {/* <AppInformation /> */}

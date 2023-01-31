@@ -73,6 +73,13 @@ const RegisterDevice = () => {
             name="chasis"
             placeholder="*Ej: ´1234567890´"
           />
+          <label htmlFor="image">Subir foto</label>
+          <input
+            type="file"
+            id="image"
+            name="image"
+            placeholder="Seleccionar Foto"
+          />
           <SelecctList title= 'Combustible' options={tipoCombustible}/>
 {/* 
           <label htmlFor="chasis">Combustible</label>

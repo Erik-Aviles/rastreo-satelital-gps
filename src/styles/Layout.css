@@ -1,8 +1,13 @@
 .Layout{
-    min-width: 304px;
-    max-width: 320px;
-    height: 500px;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: auto;
     background-color: azure;
     border: 1px solid black;
+}
+@media (min-width: 426px) {
+
+}
+@media (min-width: 769px) {
+
 }

@@ -5,3 +5,13 @@
     align-items: center;
     border-bottom: 1px solid black;
 }
+.display{
+    display: none;
+} 
+
+
+@media (min-width: 426px) {
+    .display{
+        display: block;
+    }
+}
