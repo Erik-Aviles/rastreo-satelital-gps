@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../containers/Layout";
-import Header from "../components/Header";
-// import Home from "../pages/Home";
+// import Header from "../components/Header";
+import Home from "../pages/Home";
 // import Mapa from "../containers/Mapa";
 // import CurrentDevice from "../components/CurrentDevice.jsx";
 // import Mensaje from "../components/Mensaje";
@@ -21,8 +21,8 @@ import "../styles/App.css";
 const App = () => {
   return (
     <Layout className="Layout">
-      <Header />
-      {/* <Home /> */}
+      {/* <Header /> */}
+      <Home />
       {/* <Login /> */}
       {/* <RegisterUser /> */}
       {/* <RegisterDevice />  */}

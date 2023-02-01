@@ -1,29 +1,37 @@
 import React from "react";
 import "../styles/Header.css";
-import {GiHamburgerMenu }from 'react-icons/gi'
-import {GrUser }from 'react-icons/gr'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { CiUser } from "react-icons/ci";
 
 const Header = () => {
+  const styles = {
+    size: 40,
+    color: 'var(--color-medium)',
+  };
   return (
     <section className="Header">
       <figure>
         <a href="/">
-          <GiHamburgerMenu />
+          <GiHamburgerMenu size={styles.size} color={styles.color} />
         </a>{" "}
       </figure>
 
       <figure>
         {" "}
         <a href="/">
-          <p><strong><em>Dayli</em></strong></p>
+          <span>
+            
+             Dayli
+           
+          </span>
         </a>
       </figure>
 
-      <figure>
+      <figure className="Header-container_icons" >
         {" "}
-        <p className="display">erik8822@hotmail.com</p>
+        <p className="display">Mi cuenta</p>
         <a href="/">
-          <GrUser/>
+          <CiUser className="Header_icons" size={20} color={styles.color} />
         </a>{" "}
       </figure>
     </section>

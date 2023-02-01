@@ -9,9 +9,11 @@
   --color-dark-1: #14121f;
   --color-dark-2: #2e2d33;
   --color-dark-3: #241e4a;
+
   --color-dark: #dbb144;
   --color-medium: #fe449c;
-  --color-light: #b3b7bb;
+  --color-light-1: #e0dfdf;
+  --color-light-2: #b3b7bb;
   --color-layout-1: #eff2f5;
   --color-layout-2: #f5f8f6;
   --color-button-dark: #82c638;
@@ -24,10 +26,12 @@
   --font-weight-titleh2: 500;
   --font-weight-text-long: 400;
   --font-weight-text-small: 300;
-  --font-size-lg: 2rem;
+  --font-size-xlg: 5rem;
+  --font-size-lg: 2.5rem;
   --font-size-md: 1.8rem;
-  --font-size-sm: 1.6rem;
-  --font-size-xsm: 1.4rem;
+  --font-size-sm: 1.4rem;
+  --font-size-xsm: 1.2rem;
+  --font-size-xxsm: 1rem;
 }
 
 html {
