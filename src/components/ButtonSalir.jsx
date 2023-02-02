@@ -1,9 +1,11 @@
 import React from 'react'
+import {TfiClose} from 'react-icons/tfi';
+import '../styles/ButtonSalir.css'
 
 const ButtonSalir = ({children}) => {
   return (
-    <div className="Container_button-salir">
-    <button className="button-salir">{children}</button>
+    <div className="Continer_button-salir">
+    <TfiClose className='TfiClose'   size={20} />
    </div>
   )
 }

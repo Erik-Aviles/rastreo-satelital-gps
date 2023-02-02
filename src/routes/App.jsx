@@ -12,8 +12,8 @@ import Layout from "../containers/Layout";
 // import MyDevices from "../containers/MyDevices";
 // import MenuDesplegable from "../containers/MenuDesplegable";
 // import Login from "../components/Login";
-import RegisterUser from "../components/RegisterUser";
-// import RegisterDevice from "../components/RegisterDevice";
+// import RegisterUser from "../components/RegisterUser";
+import RegisterDevice from "../components/RegisterDevice";
 // import Profile from "../containers/Profile";
 // import ButtonsShareLockUnlock from "../containers/ButtonsShareLockUnlock";
 import "../styles/App.css";
@@ -24,8 +24,8 @@ const App = () => {
       {/* <Header /> */}
       {/* <Home /> */}
       {/* <Login /> */}
-      <RegisterUser />
-      {/* <RegisterDevice />  */}
+      {/* <RegisterUser /> */}
+      <RegisterDevice /> 
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}
       {/* <RouteHistory /> */}

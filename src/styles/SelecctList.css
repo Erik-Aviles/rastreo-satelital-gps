@@ -24,12 +24,14 @@
   width: 100px;
   font-size: var(--font-size-xsm);
 }
-@media (min-width: 769px) {
-  .Content-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) {
+  .SelecctList label {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: var(--font-size-lg);
+
   }
   .SelecctList select{
-    width: 300px;
+    width: 100%;
   }
 }
