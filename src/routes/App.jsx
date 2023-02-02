@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../containers/Layout";
 // import Header from "../components/Header";
-import Home from "../pages/Home";
+// import Home from "../pages/Home";
 // import Mapa from "../containers/Mapa";
 // import CurrentDevice from "../components/CurrentDevice.jsx";
 // import Mensaje from "../components/Mensaje";
@@ -12,7 +12,7 @@ import Home from "../pages/Home";
 // import MyDevices from "../containers/MyDevices";
 // import MenuDesplegable from "../containers/MenuDesplegable";
 // import Login from "../components/Login";
-// import RegisterUser from "../components/RegisterUser";
+import RegisterUser from "../components/RegisterUser";
 // import RegisterDevice from "../components/RegisterDevice";
 // import Profile from "../containers/Profile";
 // import ButtonsShareLockUnlock from "../containers/ButtonsShareLockUnlock";
@@ -22,9 +22,9 @@ const App = () => {
   return (
     <Layout className="Layout">
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Login /> */}
-      {/* <RegisterUser /> */}
+      <RegisterUser />
       {/* <RegisterDevice />  */}
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}

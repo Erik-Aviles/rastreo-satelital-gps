@@ -5,6 +5,13 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Kiona";
+  src: url("../assets/fonts/Kiona-Itallic.ttf") format("tff"),
+    url("../assets/fonts/Kiona-Regular.ttf") format("tff");
+  font-weight: 700;
+  font-style: italic;
+}
 :root {
   --color-dark-1: #14121f;
   --color-dark-2: #2e2d33;
@@ -27,7 +34,7 @@
   --font-weight-text-long: 400;
   --font-weight-text-small: 300;
   --font-size-xlg: 5rem;
-  --font-size-lg: 2.5rem;
+  --font-size-lg: 2rem;
   --font-size-md: 1.8rem;
   --font-size-sm: 1.4rem;
   --font-size-xsm: 1.2rem;
@@ -39,6 +46,7 @@ html {
 }
 
 body {
+  background-color: var(--color-layout-2);
 }
 
 a {

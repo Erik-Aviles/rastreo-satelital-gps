@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background-color: azure;
+    background-color: var(--color-layout-2);
 }
 @media (min-width: 426px) {
 

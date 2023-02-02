@@ -40,6 +40,20 @@ module.exports = {
         type: "asset/resource",
         test: /\.(png|jpeg|jpg|svg|git)$/i,
       },
+      {
+        test: /\.tff$/,
+        use: {
+            loader: 'url-loader',
+            options: {
+                limit: 10000,
+                mimetype: "application/font-tff",
+                name: '[name].[contenthash].[ext]',
+                outputPath: './assets/font/',
+                publicPath: './assets/font/',
+                esModule: false
+            },
+        }
+    }
     ],
   },
   plugins: [

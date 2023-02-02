@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../styles/TitleH2.css'
 
 const TitleH2 = ({children}) => {
   return (
