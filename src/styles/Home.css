@@ -14,7 +14,7 @@
   gap: 30px;
   color: var(--color-layout-1);
 }
-.Home-container_logo {
+.continer_logo {
   margin: auto;
   display: flex;
   flex-direction: column;

@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../containers/Layout";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 // import Home from "../pages/Home";
-// import Mapa from "../containers/Mapa";
+import Mapa from "../containers/Mapa";
 // import CurrentDevice from "../components/CurrentDevice.jsx";
 // import Mensaje from "../components/Mensaje";
 // import Device from "../pages/Device";
@@ -13,7 +13,7 @@ import Layout from "../containers/Layout";
 // import MenuDesplegable from "../containers/MenuDesplegable";
 // import Login from "../components/Login";
 // import RegisterUser from "../components/RegisterUser";
-import RegisterDevice from "../components/RegisterDevice";
+// import RegisterDevice from "../components/RegisterDevice";
 // import Profile from "../containers/Profile";
 // import ButtonsShareLockUnlock from "../containers/ButtonsShareLockUnlock";
 import "../styles/App.css";
@@ -21,11 +21,11 @@ import "../styles/App.css";
 const App = () => {
   return (
     <Layout className="Layout">
-      {/* <Header /> */}
+      <Header />
       {/* <Home /> */}
       {/* <Login /> */}
       {/* <RegisterUser /> */}
-      <RegisterDevice /> 
+      {/* <RegisterDevice />  */}
       {/* <MenuDesplegable /> */}
       {/* <MyDevices /> */}
       {/* <RouteHistory /> */}
@@ -34,7 +34,7 @@ const App = () => {
       {/* <AppInformation /> */}
       {/* <Device /> */}
       {/* <Mensaje>Exitoso</Mensaje> */}
-      {/* <Mapa /> */}
+      <Mapa />
       {/* <CurrentDevice /> */}
       {/* <ButtonsShareLockUnlock /> */}
     </Layout>

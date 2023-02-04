@@ -1,12 +1,9 @@
-.Layout{
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    background-color: var(--color-layout-2);
+.Layout {
+  width: 100vw;
+  height: auto;
+  background-color: var(--color-layout-2);
 }
 @media (min-width: 426px) {
-
 }
 @media (min-width: 769px) {
-
 }

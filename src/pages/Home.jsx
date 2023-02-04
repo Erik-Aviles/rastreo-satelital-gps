@@ -9,7 +9,7 @@ const Home = () => {
         <title>Home - Rastreo Satelital</title>
       </Helmet>
       <section className="Home">
-        <figure className="Home-container_logo">
+        <figure className="continer_logo">
           <img className="logo-image" src="../assets/images/DrawKit Vector Illustration Sleep & Health (5).png" alt="Soy un logo" />
         </figure>
         <div className="Home-container">

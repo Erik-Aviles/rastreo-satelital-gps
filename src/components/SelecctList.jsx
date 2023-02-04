@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/SelecctList.css'
+import '../styles/SelecctList.css';
 
 const SelecctList = ({ title, options }) => {
   let id = `select-${title}`;
@@ -8,7 +8,7 @@ const SelecctList = ({ title, options }) => {
     <div className="SelecctList">
       <label htmlFor={id}>{labelTitle}</label>
       <select name={id} id={id}>
-        <option className="Elegir" value="">Elegir {title}</option>
+        <option value="">Elegir {title}</option>
         {options.map(el => <option key={el} value={el}>{el}</option>)}
       </select>
     </div>

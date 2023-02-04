@@ -1,0 +1,110 @@
+.Login {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 210px auto 70px;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  object-fit: contain;
+}
+.Top-frame {
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 25px;
+}
+
+.Frame-below {
+  border-top-right-radius: 25px;
+}
+.frame {
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-medium);
+}
+.Middle-frame {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 100px auto 70px;
+}
+.Content-form {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-text);
+}
+.label-design {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  color: var(--color-medium);
+  font-size: var(--font-size-sm);
+}
+.input-design {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  background-color: var(--color-light-1);
+  color: var(--color-dark-3);
+  font-size: var(--font-size-xsm);
+  outline-color: var(--color-light-2);
+}
+.input-design::placeholder {
+  font-size: var(--font-size-xsm);
+  color: var(--color-light-2);
+}
+.Button-Login {
+  width: 136px;
+  height: 35px;
+  align-self: center;
+  margin: 50px 0;
+
+  border: 1px solid var(--color-button-dark);
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px var(--color-button-dark);
+  color: var(--color-button-dark);
+}
+.Button-Login:hover {
+  cursor: pointer;
+  border: 1px solid var(--color-medium);
+  box-shadow: 10px 5px 5px var(--color-medium);
+  color: var(--color-medium);
+}
+.Login_content--select-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Login_content--select-two {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Login_content--select-one,
+.Login_content--select-two {
+  font-size: var(--font-size-xsm);
+}
+.Login_content--select-two a,
+.Login_content-2--left a {
+  color: var(--color-medium);
+}
+.Login_content-2--rigth {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .Login {
+    justify-items: center;
+  }
+  .Middle-frame {
+    max-width: 394px;
+  }
+}

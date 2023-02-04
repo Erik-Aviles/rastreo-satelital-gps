@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import TitleH2 from "./TitleH2";
+import "../styles/Login.css";
 
 const Login = () => {
   return (
@@ -9,51 +10,54 @@ const Login = () => {
         <title>Login - Rastreo Satelital</title>
       </Helmet>
       <section className="Login">
-        <figure className="Login-container_logo">
-          <img className="logo-image" src="" alt="Soy un logo" />
-        </figure>
-        <TitleH2>Login</TitleH2>
-        <h2 className="Login-title subtitle">Login</h2>
-        <form className="Login_content-form">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="hello@dayli.com" />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" placeholder="**********" />
-          <div className="Login_content--select-one">
-            <div className="Login_content-2--rigth">
-              <input type="checkbox" id="checkbox" />
-              <label htmlFor="checkbox">Recordarme </label>
-            </div>
-            <div className="Login_content-2--left">
-              <a href="/">
-                <p htmlFor="forgot-password">Olvide mi contraseña</p>
-              </a>
-            </div>
-          </div>
-          <button type="button">Login</button>
-        </form>
-        <div className="Login_content--select-two">
-          <p> No tienes una cuenta?</p>
-          <a href="/"> Registrate</a>
+        <div className="Top-frame frame">
+          <img
+            className="logo-image"
+            src="../assets/images/DrawKit Vector Illustration Sleep & Health (5).png"
+            alt="Soy un logo"
+          />
         </div>
+        <div className="Middle-frame">
+          <TitleH2>Login</TitleH2>
+          <form className="Content-form">
+            <label className="label-design" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="input-design"
+              type="email"
+              id="email"
+              placeholder="hello@dayli.com"
+            />
+            <label className="label-design" htmlFor="password">
+              Password
+            </label>
+            <input
+              className="input-design"
+              type="password"
+              id="password"
+              placeholder="**********"
+            />
+            <div className="Login_content--select-one">
+              <div className="Login_content-2--rigth">
+                <input type="checkbox" id="checkbox" />
+                <label htmlFor="checkbox">Recordarme </label>
+              </div>
+              <div className="Login_content-2--left">
+                <a href="/">
+                  <p htmlFor="forgot-password">Olvide mi contraseña</p>
+                </a>
+              </div>
+            </div>
+            <button className="Button-Login" type="button">Login</button>
+          </form>
+          <div className="Login_content--select-two">
+            <p> No tienes una cuenta?</p>
+            <a href="/"> Registrate</a>
+          </div>
+        </div>
+        <div className="Frame-below frame"></div>
       </section>
-      {/* <form>
-        <fieldset>
-          <legend>Información Personal</legend>
-          Nombre: <input name="nombre" type="text" tabindex="1" />
-          Apellidos: <input name="apellidos" type="text" tabindex="2" />
-        </fieldset>
-
-        <fieldset>
-          <legend>edad</legend>
-          <input type="checkbox" tabindex="20" name="edad" value="20-39" />{" "}
-          20-39
-          <input type="checkbox" tabindex="21" name="edad" value="40-59" />{" "}
-          40-59
-          <input type="checkbox" tabindex="22" name="edad" value="60-79" />{" "}
-          60-79
-        </fieldset>
-      </form> */}
     </>
   );
 };

@@ -1,21 +1,47 @@
 import React from "react";
-import SelecctList from "../components/SelecctList";
-import TitleH2 from "../components/TitleH2";
+// import SelecctList from "../components/SelecctList";
+import "../styles/Mapa.css";
+import {
+  MdOutlineFollowTheSigns,
+  MdOutlineDeliveryDining,
+} from "react-icons/md";
+import { GrLastfm } from "react-icons/gr";
 import DeviceStatuses from "./DeviceStatuses";
 
-const viewMaps = ["Google satelite", "Google clásico", "Google streest"];
+const viewMaps = [
+  "Google clásico",
+  "Google satelite",
+  "Google streest",
+  "Carto",
+  "OSM",
+];
 const Mapa = () => {
+  const style = { size: 25 };
   return (
     <section className="Mapa">
-      <TitleH2>Mapa</TitleH2>
-      <div className="Select-mapas">
-        <SelecctList title="Mapa" options={viewMaps} />
-        <button>in-line</button>
-        <button>runtime</button>
-        <button>last route</button>
+      <div className="Mapa-container_top-frame">
+        <select className="select-map" name="mapa" id="mapa">
+          {viewMaps.map((el) => (
+            <option key={el} value={el}>
+              {el}
+            </option>
+          ))}
+        </select>
+        <div className="group-button-top-left">
+          <div title="Seguir" className="icons">
+            <MdOutlineFollowTheSigns size={style.size} />
+          </div>
+          <div title="Rutas en vivo" className="icons">
+            <MdOutlineDeliveryDining size={style.size} />
+          </div>
+          <div title="Ultima ruta" className="icons">
+            <GrLastfm size={style.size} />
+          </div>
+        </div>
       </div>
       <div className="Mapa-container">Mapa</div>
-      <DeviceStatuses />
+      <div className="container-device-Statuses">Device Statuses</div>
+      {/* <DeviceStatuses /> */}
     </section>
   );
 };
