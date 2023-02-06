@@ -40,8 +40,8 @@ const Mapa = () => {
         </div>
       </div>
       <div className="Mapa-container">Mapa</div>
-      <div className="container-device-Statuses">Device Statuses</div>
-      {/* <DeviceStatuses /> */}
+      {/* <div className="container-device-Statuses">Device Statuses</div> */}
+      <DeviceStatuses />
     </section>
   );
 };

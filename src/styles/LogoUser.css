@@ -1,0 +1,24 @@
+.Logo-User-container_icons {
+  width: 69.9px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+.Logo-User-container_icons p {
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-text-small);
+  font-size: var(--font-size-xsm);
+  color: var(--color-light-2);
+}
+.user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: var(--color-light-1);
+  border-radius: 50%;
+}
+

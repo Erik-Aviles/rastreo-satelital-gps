@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CiUser } from "react-icons/ci";
+import Logo from "./Logo";
+import LogoUser from "./LogoUser";
 
 const Header = () => {
+  const [width, setWidth] = useState(screen.width);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(screen.width));
+  }, []);
+
   const styles = {
-    size: 40,
-    color: 'var(--color-medium)',
+    size: 30,
+    color: "var(--color-medium)",
   };
   return (
     <section className="Header">
@@ -16,24 +24,8 @@ const Header = () => {
         </a>{" "}
       </figure>
 
-      <figure>
-        {" "}
-        <a href="/">
-          <span>
-            
-             Dayli
-           
-          </span>
-        </a>
-      </figure>
-
-      <figure className="Header-container_icons" >
-        {" "}
-        <p className="display">Mi cuenta</p>
-        <a href="/">
-          <CiUser className="Header_icons" size={20} color={styles.color} />
-        </a>{" "}
-      </figure>
+      <Logo />
+      <LogoUser display={width >= 768 ? 'block' : 'none'} />
     </section>
   );
 };

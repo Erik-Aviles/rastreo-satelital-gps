@@ -3,7 +3,7 @@
   height: auto;
   display: grid;
   align-items: center;
-  grid-template-rows: 45px auto 80px;
+  grid-template-rows: 45px auto 120px;
 }
 .Mapa-container_top-frame {
   width: 100vw;
@@ -52,7 +52,7 @@
   background-image: url(https://cdn.pixabay.com/photo/2018/06/18/23/03/europe-3483539_1280.jpg);
   background-size: cover;
   width: 100vw;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 210.33px);
 }
 .container-device-Statuses {
   height: 100%;

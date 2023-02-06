@@ -1,7 +1,7 @@
 import React from "react";
 import inicialData from "../components/const/inicialData";
 import ShowDeviceTable from "../components/ShowDeviceTable";
-
+import '../styles/DeviceStatuses.css'
 const DeviceStatuses = () => {
   const columns = [
     { name: "Nombre disp.", selector: (row) => row.name },
@@ -19,8 +19,7 @@ const DeviceStatuses = () => {
 
   return (
     <div className="Device-Statuses">
-      <h4>Dispositivos hoy</h4>
-      <ShowDeviceTable columns={columns} data={inicialData}/>
+      <ShowDeviceTable columns={columns} data={inicialData} />
     </div>
   );
 };

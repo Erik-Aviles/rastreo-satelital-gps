@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../containers/Layout";
 import Header from "../components/Header";
 // import Home from "../pages/Home";
-import Mapa from "../containers/Mapa";
+// import Mapa from "../containers/Mapa";
 // import CurrentDevice from "../components/CurrentDevice.jsx";
 // import Mensaje from "../components/Mensaje";
 // import Device from "../pages/Device";
@@ -10,7 +10,7 @@ import Mapa from "../containers/Mapa";
 // import Alerts from "../containers/Alerts";
 // import RouteHistory from "../containers/RouteHistory";
 // import MyDevices from "../containers/MyDevices";
-// import MenuDesplegable from "../containers/MenuDesplegable";
+import MenuDesplegable from "../pages/MenuDesplegable";
 // import Login from "../components/Login";
 // import RegisterUser from "../components/RegisterUser";
 // import RegisterDevice from "../components/RegisterDevice";
@@ -26,7 +26,7 @@ const App = () => {
       {/* <Login /> */}
       {/* <RegisterUser /> */}
       {/* <RegisterDevice />  */}
-      {/* <MenuDesplegable /> */}
+      <MenuDesplegable />
       {/* <MyDevices /> */}
       {/* <RouteHistory /> */}
       {/* <Alerts /> */}
@@ -34,7 +34,7 @@ const App = () => {
       {/* <AppInformation /> */}
       {/* <Device /> */}
       {/* <Mensaje>Exitoso</Mensaje> */}
-      <Mapa />
+      {/* <Mapa /> */}
       {/* <CurrentDevice /> */}
       {/* <ButtonsShareLockUnlock /> */}
     </Layout>
