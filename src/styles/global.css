@@ -19,8 +19,9 @@
 
   --color-dark: #dbb144;
   --color-medium: #fe449c;
-  --color-light-1: #e0dfdf;
+  --color-light-1: #e4e6e8;
   --color-light-2: #b3b7bb;
+  --color-light-dark-3: #76787a;
   --color-layout-1: #eff2f5;
   --color-layout-2: #f5f8f6;
   --color-button-dark: #82c638;
@@ -36,6 +37,7 @@
   --font-size-xlg: 5rem;
   --font-size-lg: 2rem;
   --font-size-md: 1.8rem;
+  --font-size-md2: 1.6rem;
   --font-size-sm: 1.4rem;
   --font-size-xsm: 1.2rem;
   --font-size-xxsm: 1rem;
@@ -51,4 +53,5 @@ body {
 
 a {
   text-decoration: none;
+
 }
