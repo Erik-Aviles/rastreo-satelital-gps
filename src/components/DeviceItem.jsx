@@ -1,18 +1,21 @@
 import React from "react";
+import { TbLock, TbLockOpen } from "react-icons/tb";
 import "../styles/DeviceItem.css";
 
 const DeviceItem = () => {
   return (
     <article className="DeviceItem">
-      <div >
+      <div className="Item-info">
         <h4>Mazda</h4>
         <p>ABC-123</p>
-        <div className="DeviceItem_button">
-          <button>bloqueo</button>
-          <button>desbloqueo</button>
+        <p>Apagado</p>
+
+        <div type="button">
+          <TbLock size={20} color="green"/>
+          <TbLockOpen size={20} color="red"/>
         </div>
       </div>
-      <button>Mostrar</button>
+      <button className="Item-button_mostrar">Mostrar</button>
     </article>
   );
 };

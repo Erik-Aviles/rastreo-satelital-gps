@@ -8,13 +8,15 @@ import "../styles/MyDevices.css";
 const MyDevices = () => {
   return (
     <section className="MyDevices">
-      <div>
+      <div className="MyDevices-container">
         <TitleH2>Mis Dispositivos</TitleH2>
         <div className="MyDevices-items">
           <DeviceItem />
           <DeviceItem />
           <DeviceItem />
           <DeviceItem />
+          <DeviceItem />
+     
         </div>
       </div>
 

@@ -9,8 +9,8 @@ import Header from "../components/Header";
 // import AppInformation from "../pages/AppInformation";
 // import Alerts from "../containers/Alerts";
 // import RouteHistory from "../containers/RouteHistory";
-// import MyDevices from "../containers/MyDevices";
-import MenuDesplegable from "../pages/MenuDesplegable";
+import MyDevices from "../containers/MyDevices";
+// import MenuDesplegable from "../pages/MenuDesplegable";
 // import Login from "../components/Login";
 // import RegisterUser from "../components/RegisterUser";
 // import RegisterDevice from "../components/RegisterDevice";
@@ -26,8 +26,8 @@ const App = () => {
       {/* <Login /> */}
       {/* <RegisterUser /> */}
       {/* <RegisterDevice />  */}
-      <MenuDesplegable />
-      {/* <MyDevices /> */}
+      {/* <MenuDesplegable />/ */}
+      <MyDevices />
       {/* <RouteHistory /> */}
       {/* <Alerts /> */}
       {/* <Profile /> */}
