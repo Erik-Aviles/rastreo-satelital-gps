@@ -17,6 +17,7 @@
   height: 100%;
 }
 .choose-option button {
+  background-color: #fff;
   font-family: var(--font-family-titles);
 }
 .choose-option button,
@@ -61,6 +62,7 @@
   border: none;
 }
 .button-options-below button {
+  background-color: var(--color-layout-2);
   border: none;
   border-radius: 5px;
   box-shadow: 8px 3px 8px 3px var(--color-light-2);
