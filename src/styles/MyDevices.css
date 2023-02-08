@@ -1,7 +1,7 @@
 .MyDevices {
   height: calc(100% - 42px);
   display: grid;
-  grid-template-rows: 100px 70px auto 70px;
+  grid-template-rows: 100px 55px auto 70px;
 }
 .MyDevices-items {
   border-radius: 10px;
@@ -12,3 +12,4 @@
   overflow-x: hidden;
   gap: 20px;
 }
+

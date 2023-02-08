@@ -1,6 +1,6 @@
 import React from "react";
 import { CiUser } from "react-icons/ci";
-import { HiBellAlert } from "react-icons/hi2";
+import { AiOutlineBell } from "react-icons/ai";
 import { IoChevronForwardSharp, IoLogOutOutline } from "react-icons/io5";
 import { RiSdCardMiniLine } from "react-icons/ri";
 import { MdOutlineHistoryEdu, MdInfoOutline } from "react-icons/md";
@@ -29,7 +29,7 @@ const HistoryIcon = () => {
   return <MdOutlineHistoryEdu size={styles.size} color={styles.color} />;
 };
 const AlertIcon = () => {
-  return <HiBellAlert size={styles.size} color={styles.color} />;
+  return <AiOutlineBell size={styles.size} color={styles.color} />;
 };
 const InfoAppIcon = () => {
   return <MdInfoOutline size={styles.size} color={styles.color} />;

@@ -1,0 +1,16 @@
+.Alerts{
+    width: 100%;
+    height: calc(100vh - 42px);
+    display: grid;
+    grid-template-rows: 100px auto 50px;
+}
+.Alert-containert{
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid var(--color-button-medium);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 100px);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-md2);
+}

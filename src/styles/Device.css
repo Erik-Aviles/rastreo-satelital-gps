@@ -1,0 +1,37 @@
+.Device {
+  width: 100%;
+  height: calc(100vh - 42px);
+  display: grid;
+  grid-template-rows: 100px auto auto 50px;
+}
+.Device-data,
+.Last-updated-data {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 30px auto;
+}
+.Device_subTitle {
+  font-family: var(--font-family-titles);
+  font-size: var(--font-size-md2);
+  color: var(--color-button-dark);
+}
+.Device-conteiner_info {
+  padding: 10px;
+  list-style: none;
+  border: 1px solid var(--color-light-2);
+  border-radius: 10px;
+}
+.data-title {
+  padding: 5px;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-titleh1);
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.data {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xsm);
+  font-weight: var(--font-weight-text-long);
+}

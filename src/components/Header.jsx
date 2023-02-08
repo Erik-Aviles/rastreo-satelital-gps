@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineBars } from "react-icons/ai";
 import Logo from "./Logo";
 import { UserIcon } from "./Icons";
 
@@ -19,7 +19,7 @@ const Header = () => {
     <section className="Header">
       <figure>
         <a href="/">
-          <GiHamburgerMenu size={styles.size} color={styles.color} />
+          <AiOutlineBars size={styles.size} color={styles.color} />
         </a>{" "}
       </figure>
 

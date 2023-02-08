@@ -1,8 +1,8 @@
 .History {
   width: 100%;
-  height: calc(100% - 42px);
+  height: calc(100vh - 42px);
   display: grid;
-  grid-template-rows: 100px 50px auto 70px;
+  grid-template-rows: 100px 50px auto 60px;
   align-items: center;
 }
 .choose-option {
@@ -22,7 +22,7 @@
 .choose-option button,
 .SelecctList {
   margin: 5px 0;
-  border: 1px solid var(--color-button-dark);
+  border: 1px solid var(--color-button-medium);
   width: 100%;
   height: 80%;
 }
@@ -30,7 +30,7 @@
 .choose-option button:hover {
   margin: 0;
   cursor: pointer;
-  background-color: var(--color-button-dark);
+  background-color: var(--color-button-medium);
   height: 100%;
 }
 .SelecctList select {
@@ -50,6 +50,28 @@
   width: 100vw;
   height: 100%;
 }
+.button-options-below {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 70px) auto;
+  grid-template-rows: 35px;
+  align-self: center;
+  gap: 10px;
+  padding: 0 10px 0 20px;
+  border: none;
+}
+.button-options-below button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 8px 3px 8px 3px var(--color-light-2);
+}
+.Continer_button-salir {
+  padding-bottom: 8px;
+}
+.button-options-below button:hover {
+  cursor: pointer;
+  background-color: var(--color-medium);
+}
 
 @media (min-width: 768px) {
   .choose-option {
@@ -63,7 +85,10 @@
   .choose-option button:hover {
     margin: 0 auto;
     cursor: pointer;
-    background-color: var(--color-button-dark);
+    background-color: var(--color-button-medium);
     height: 100%;
+  }
+  .button-options-below {
+    grid-template-columns: repeat(3, 100px) auto;
   }
 }

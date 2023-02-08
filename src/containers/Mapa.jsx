@@ -5,6 +5,7 @@ import {
   MdOutlineFollowTheSigns,
   MdOutlineDeliveryDining,
 } from "react-icons/md";
+import { AiOutlineAim } from "react-icons/ai";
 import { GrLastfm } from "react-icons/gr";
 import DeviceStatuses from "./DeviceStatuses";
 
@@ -36,6 +37,9 @@ const Mapa = () => {
           </div>
           <div title="Ultima ruta" className="icons">
             <GrLastfm size={style.size} />
+          </div>
+          <div title="Enfoque" className="icons">
+            <AiOutlineAim size={style.size} />
           </div>
         </div>
       </div>

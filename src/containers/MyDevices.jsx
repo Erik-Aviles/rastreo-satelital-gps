@@ -20,7 +20,7 @@ const MyDevices = () => {
         <DeviceItem />
         <DeviceItem />
       </div>
-      <ButtonSalir>X</ButtonSalir>
+      <ButtonSalir />
     </section>
   );
 };
