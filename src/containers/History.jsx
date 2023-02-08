@@ -5,10 +5,11 @@ import inicialData from "../components/const/inicialData";
 import SelecctList from "../components/SelecctList";
 import TitleH2 from "../components/TitleH2";
 import ShowDeviceTable from "../components/ShowDeviceTable";
+import '../styles/History.css'
 
 const devices = ["AEI123", "ZYH463", "USD098"];
 const period = ["Hoy", "Ayer", "Semana actual", "Ultimo mes"];
-const RouteHistory = () => {
+const History = () => {
   const columns = [
     { name: "Nombre disp.", selector: (row) => row.name },
     { name: "Direccion", selector: (row) => row.address },
@@ -28,23 +29,21 @@ const RouteHistory = () => {
   return (
     <>
       <Helmet>
-        <title>Historial- Rastreo Satelital</title>
+        <title>Historial - Rastreo Satelital</title>
       </Helmet>
-      <section className="Route-History">
-        <TitleH2>Route history</TitleH2>
-        <div className="select-device">
-          <div className="choose-option">
-            <SelecctList title="device" options={devices} />
-            <SelecctList title="periodo" options={period} />
-            <button type="button">Mostrar</button>
-          </div>
-          <div className="displays-selection">
-            <p>USD098</p>
-            <p>Hoy</p>
-          </div>
+      <section className="History">
+        <TitleH2>Historial de rutas</TitleH2>
+        <div className="choose-option">
+          <SelecctList title="device" options={devices} />
+          <SelecctList title="periodo" options={period} />
+          <button type="button">Mostrar</button>
         </div>
+        {/* <div className="show-selection">
+          <p>USD098</p>
+          <p>Hoy</p>
+        </div> */}
         <div className="route-history-display">
-          <ShowDeviceTable  columns={columns} data={inicialData}/>
+          <ShowDeviceTable title='' columns={columns} data={inicialData} />
         </div>
         <div className="button-options-below">
           <button>Exportar</button>
@@ -58,4 +57,4 @@ const RouteHistory = () => {
   );
 };
 
-export default RouteHistory;
+export default History;

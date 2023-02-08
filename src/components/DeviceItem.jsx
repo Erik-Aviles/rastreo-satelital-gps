@@ -11,8 +11,8 @@ const DeviceItem = () => {
         <p>Apagado</p>
 
         <div type="button">
-          <TbLock size={25} color="green"/>
-          <TbLockOpen size={25} color="red"/>
+          <TbLock title="Bloqueo" size={25} color="green" />
+          <TbLockOpen title="Desbloqueo" size={25} color="red" />
         </div>
       </div>
       <button className="Item-button_mostrar">Mostrar</button>

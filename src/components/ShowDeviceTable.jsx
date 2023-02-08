@@ -60,7 +60,7 @@ const customStyles = {
  
 };
 
-const ShowDeviceTable = ({ columns, data }) => {
+const ShowDeviceTable = ({title, columns, data }) => {
   /*   //1.- Configurar los hooks
   const [user, setUser] = useState([]);
   
@@ -88,7 +88,7 @@ const ShowDeviceTable = ({ columns, data }) => {
       ) : (
         <DataTable
           className="kNUuTe"
-          title="Dispositivos disponibles"
+          title={title}
           columns={columns}
           data={data}
           customStyles={customStyles}
