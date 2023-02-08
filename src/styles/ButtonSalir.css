@@ -1,13 +1,14 @@
 .Continer_button-salir {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
+  padding: 0 20px 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 .TfiClose {
   color: var(--color-medium);
 }
 .TfiClose:hover {
-    cursor: pointer;
+  cursor: pointer;
   color: var(--color-button-dark);
 }

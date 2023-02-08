@@ -1,25 +1,21 @@
 .MyDevices {
-  width: 100vw;
-  padding: 0 0 20px 0;
   height: calc(100% - 42px);
   display: grid;
-  grid-template-rows: auto 70px 70px;
+  grid-template-rows: 100px 70px auto 70px;
 }
-.MyDevices-container {
+.MyDevices {
+  height: calc(100% - 42px);
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 100px 70px auto 70px;
 }
+
 .MyDevices-items {
-  border: 1px solid var(--color-light-2);
+  
   border-radius: 10px;
   padding-top: 10px;
-  margin: 0 20px 20px;
   display: grid;
-  grid-template-rows: repeat(auto-fill, 80px);
+  grid-template-rows: repeat(auto-fill, 85px);
   place-items: center;
-  gap: 20px;
   overflow-x: hidden;
-}
-.MyDevices-items:first-child {
-  padding-top: 10px;
+  gap: 20px;
 }

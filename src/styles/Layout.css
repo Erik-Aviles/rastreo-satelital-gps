@@ -1,6 +1,6 @@
 .Layout {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-color: var(--color-layout-2);
 }
 @media (min-width: 426px) {

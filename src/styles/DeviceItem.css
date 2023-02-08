@@ -1,13 +1,13 @@
 .DeviceItem {
+  min-width: 280px;
+  max-width: 375px;
   font-family: var(--font-family-text);
   position: relative;
-  width: 90%;
   display: inline-block;
 }
 .Item-info {
   font-size: var(--font-size-xsm);
   padding: 5px;
-  height: auto;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -15,21 +15,31 @@
   border-bottom: 5px solid var(--color-button-medium);
   border-radius: 5px;
 }
-.Item-info h4,.Item-button_mostrar {
+.Item-info {
+  font-size: var(--font-size-xsm);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border: 1px solid var(--color-button-medium);
+  border-bottom: 5px solid var(--color-button-medium);
+  border-radius: 5px;
+}
+.Item-info h4,
+.Item-button_mostrar {
   font-size: var(--font-size-sm);
 }
-.Item-info button {
-    width: 50%;
+.Item-info div {
+  width: 52px;
   font-size: var(--font-size-sm);
   border: 1px solid var(--color-light-2);
-
 }
 
 .Item-button_mostrar {
   position: absolute;
-  bottom: 26px;
-  right: -28px;
-  width: 92px;
+  bottom: 33px;
+  right: -31px;
+  width: 99px;
   height: 35px;
   background-color: var(--color-button-dark);
   border: 1px solid var(--color-button-dark);
@@ -38,7 +48,6 @@
 }
 .Button-register {
   align-self: center;
-
   box-shadow: 10px 5px 5px var(--color-button-dark);
 }
 .Item_button:hover {
