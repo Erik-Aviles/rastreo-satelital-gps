@@ -1,13 +1,13 @@
-import React from 'react'
-import {TfiClose} from 'react-icons/tfi';
-import '../styles/ButtonSalir.css'
+import React from "react";
+import { TfiClose } from "react-icons/tfi";
+import "../styles/ButtonSalir.css";
 
-const ButtonSalir = ({children}) => {
+const ButtonSalir = ({ size, color }) => {
   return (
     <div className="Continer_button-salir">
-    <TfiClose className='TfiClose'   size={20} />
-   </div>
-  )
-}
+      <TfiClose className="TfiClose" size={size} color={color} />
+    </div>
+  );
+};
 
-export default ButtonSalir
+export default ButtonSalir;

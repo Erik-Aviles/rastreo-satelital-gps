@@ -1,37 +1,67 @@
 import React from "react";
 import ButtonSalir from "./ButtonSalir";
-import '../styles/CurrentDevice.css'
+import { AiTwotoneFlag } from "react-icons/ai";
+import { FcAutomotive } from "react-icons/fc";
+import { BsSlashLg } from "react-icons/bs";
+import "../styles/CurrentDevice.css";
 
 const CurrentDevice = () => {
   return (
     <article className="Current-Device">
-      <ButtonSalir>x</ButtonSalir>
-      <h4>AEI1234</h4>
-      <div>
-        <p>01-03-2020</p>
-        <p>14:30</p>
+      <div className="Dta-current">
+        <div className="time-current">
+          <p>01-03-2020</p>
+          <BsSlashLg size={15} />
+          <div className="motor-state">
+            <FcAutomotive />
+            <p>Apagado</p>
+          </div>
+        </div>
+        <ButtonSalir size={15} />
       </div>
-      <div>
-        <ul>
-          <li>
-            Motor:{" "}
-            <span>
-              <em>Apagado</em>
-            </span>
-          </li>
-          <li>
-            Velocidad: <span>80 km/h</span>
-          </li>
-          <li>
-            Horas acumuladas: <span>7:34:00</span>
-          </li>
-          <li>
-            Kilometros recorridos: <span>30 km</span>
-          </li>
-          <li>
-            Direccion: <span>Av. Walter Andrade</span>
-          </li>
-        </ul>
+
+      <div className="Dta-current-address">
+        <div className="address-data">
+          <AiTwotoneFlag color="green" size={20} />
+          <p className="address-name">
+            Av. Walter Andrade Andrade Andrade Andrade
+          </p>
+          <p className="time-data">14:30</p>
+        </div>
+        <div className="address-data">
+          <AiTwotoneFlag color="black" size={20} />
+          <p className="address-name">
+            Av. Walter Andrade Walter v v Walter v v Walter
+          </p>
+          <p className="time-data">14:30</p>
+        </div>
+      </div>
+
+      <div className="box-data">
+        <p className="box1 box">
+          {" Placa: "}
+          <span>
+            <em>H1342</em>
+          </span>
+        </p>
+        <p className="box2 box">
+          {"Velocidad: "}
+          <span>
+            <em>80 km/h</em>
+          </span>
+        </p>
+        <p className="box3 box">
+          {"Duracion: "}
+          <span>
+            <em>1:34:00</em>
+          </span>
+        </p>
+        <p className="box4 box">
+          {"Kilometros: "}
+          <span>
+            <em>80 km</em>
+          </span>
+        </p>
       </div>
     </article>
   );

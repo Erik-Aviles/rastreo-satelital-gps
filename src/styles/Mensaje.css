@@ -1,0 +1,35 @@
+.Mesagge {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 10px 20px var(--color-light-dark-3);
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-titleh2);
+}
+.Mesagge p {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-titleh2);
+}
+.Mesagge-button {
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  background-color: var(--color-error);
+}
+.exit {
+  background-color: var(--color-exit);
+}

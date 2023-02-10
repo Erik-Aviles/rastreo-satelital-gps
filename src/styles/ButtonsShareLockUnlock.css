@@ -1,5 +1,23 @@
-.Buttons-Share-Lock-Unlock{
-    background-color: aquamarine;
-    height: auto;
-    width: 70px;
+.Buttons-Share-Lock-Unlock {
+  width: 30px;
+  height: auto;
+  background-color: transparent;
+
+}
+.Button-Lock,
+.Button-Unlock,
+.Button-Share {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+  border: 1px solid grey;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Button-Lock,
+.Button-Unlock,
+.Button-Share:hover {
+cursor: pointer;
 }

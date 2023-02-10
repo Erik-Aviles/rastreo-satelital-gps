@@ -12,3 +12,22 @@
   gap: 20px;
 }
 
+@media (min-width: 426px) {
+  .Content-form {
+
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .MyDevices-items {
+
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .MyDevices-items {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+  }
+}

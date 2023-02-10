@@ -1,9 +1,10 @@
 import React from "react";
+import { TbLockOpen } from "react-icons/tb";
 
-const ButtonUnlock = () => {
+const ButtonUnlock = ({ title, size, color }) => {
   return (
-    <figure>
-      <img src="" alt="unlock" />
+    <figure className="Button-Unlock  Mesagge-button exit">
+      <TbLockOpen title={title} size={size} color={color} />
     </figure>
   );
 };

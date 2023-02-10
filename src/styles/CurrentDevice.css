@@ -1,5 +1,87 @@
-.Current-Device{
-    height: auto;
-    width: 70%;
-    background-color: aqua;
+.Current-Device {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+  border: 0.5px solid var(--color-light-2);
+  border-radius: 20px;
+}
+.Dta-current {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 80% 15%;
+  gap: 5%;
+  justify-items: end;
+  background-color: var(--color-light-2);
+  color: var(--color-medium);
+}
+
+.time-current {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-titles);
+}
+.time-current p:first-child {
+  font-size: var(--font-size-md2);
+}
+.motor-state {
+  display: flex;
+  gap: 2px;
+}
+
+.Dta-current-address {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xsm);
+}
+
+.address-data {
+  padding: 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.address-name {
+  padding: 0 10px 0 3px;
+}
+.Continer_button-salir {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-data {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "data1 data2"
+    "data3 data4";
+}
+.box {
+  padding: 10px;
+  margin: 1px;
+  border: 1px solid var(--color-button-dark);
+  color: var(--color-light-dark-3);
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xsm);
+  font-weight: var(--font-weight-titleh1);
+}
+.box:nth-child(3) {
+  border-bottom-left-radius: 15px;
+}
+.box:nth-child(4) {
+  border-bottom-right-radius: 15px;
+}
+.box span {
+  font-size: var(--font-size-xsm);
+  color: var(--color-dark-2);
 }

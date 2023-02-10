@@ -27,6 +27,8 @@
   --color-button-dark: #82c638;
   --color-button-medium: #bee09b;
   --color-button-light: #deeed0;
+  --color-exit: green;
+  --color-error: rgb(249, 43, 43);
 
   --font-family-titles: "Lato", sans-serif;
   --font-family-text: "EB Garamond", serif;
@@ -53,5 +55,4 @@ body {
 
 a {
   text-decoration: none;
-
 }

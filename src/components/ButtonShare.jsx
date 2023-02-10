@@ -1,9 +1,10 @@
 import React from "react";
+import { TbShare } from "react-icons/tb";
 
-const ButtonShare = () => {
+const ButtonShare = ({ title, size, color }) => {
   return (
-    <figure>
-      <img src="" alt="share" />
+    <figure className="Button-Share">
+      <TbShare title={title} size={size} color={color} />
     </figure>
   );
 };

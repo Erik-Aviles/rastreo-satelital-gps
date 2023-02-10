@@ -7,7 +7,7 @@
   align-items: flex-end;
 }
 .TfiClose {
-  color: var(--color-medium);
+  color: var(--color-medium);/* cambiar */
 }
 .TfiClose:hover {
   cursor: pointer;
