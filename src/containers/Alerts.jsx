@@ -21,7 +21,7 @@ const Alerts = () => {
           <TypeAlert key={`alert-${title}`} title={title} />
         ))}
       </div>
-      <ButtonSalir>X</ButtonSalir>
+      <ButtonSalir size={20}/>
     </section>
   );
 };

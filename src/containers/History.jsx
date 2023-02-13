@@ -50,7 +50,7 @@ const History = () => {
           <button>Reporte</button>
           {/* mensaje via whatsApp */}
           <button>Limpiar</button>
-          <ButtonSalir>X</ButtonSalir>
+          <ButtonSalir size={20}/>
         </div>
       </section>
     </>

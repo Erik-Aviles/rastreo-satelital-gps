@@ -11,10 +11,10 @@ const styles = {
   color: "var(--color-light-2)",
 };
 
-const UserIcon = ({ display }) => {
+const UserIcon = ({ display, text }) => {
   return (
     <figure className="Logo-User-container_icons">
-      <p style={{ display: display }}>Erika</p>
+      <p style={{ display: display }}>{text}</p>
       <a className="user-icon" href="/">
         <CiUser size={25} color={"var(--color-medium)"} />
       </a>

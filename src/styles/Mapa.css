@@ -39,8 +39,7 @@
 
 .group-button-top-left {
   display: grid;
-  grid-template-columns: repeat(3, 38.77px);
-  grid-template-rows: 30px;
+  grid-template-columns: repeat(4, 30px);
   gap: 5px;
   justify-content: end;
   align-items: center;
@@ -61,7 +60,7 @@
 @media (min-width: 426px) {
 }
 @media (min-width: 768px) {
-  S .Mapa-container_top-frame {
+  .Mapa-container_top-frame {
     width: 100vw;
     padding: 0 10px;
     display: grid;

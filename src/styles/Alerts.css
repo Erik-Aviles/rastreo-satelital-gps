@@ -1,6 +1,6 @@
 .Alerts {
   width: 100%;
-  height: calc(100vh - 42px);
+  height: 100vh;
   display: grid;
   grid-template-rows: 100px auto 50px;
 }
@@ -13,14 +13,20 @@
   font-family: var(--font-family-text);
   font-size: var(--font-size-md2);
 }
+.Continer_button-salir {
+  padding: 0 20px 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
 @media (min-width: 768px) {
   .Alerts {
     display: grid;
     justify-items: center;
   }
-
   .Alert-containert {
     width: 400px;
-  
   }
 }

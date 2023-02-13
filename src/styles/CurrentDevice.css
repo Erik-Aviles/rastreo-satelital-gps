@@ -13,10 +13,12 @@
   grid-template-columns: 80% 15%;
   gap: 5%;
   justify-items: end;
-  background-color: var(--color-light-2);
-  color: var(--color-medium);
+  background-color: var(--color-button-dark);
 }
-
+.Dta-current,
+.TfiClose {
+  color: var(--color-dark-3);
+}
 .time-current {
   width: 100%;
   display: flex;
@@ -47,12 +49,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.address-data_left{
-    display: flex;
-    align-items: center;
+.address-data_left {
+  display: flex;
+  align-items: center;
 }
 .address-name {
   padding: 0 10px 0 3px;
+}
+.time-data {
+  font-weight: var(--font-weight-titleh1);
 }
 .Continer_button-salir {
   padding: 0;

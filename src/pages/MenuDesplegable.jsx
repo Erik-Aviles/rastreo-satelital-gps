@@ -21,10 +21,10 @@ const MenuDesplegable = () => {
     <div className="Menu">
       <div className="menu-logos">
         <Logo />
-        <ButtonSalir>X</ButtonSalir>
+        <ButtonSalir size={20} />
       </div>
       <div className="menu-user">
-        <UserIcon />
+        <UserIcon text="Hola Erika" />
       </div>
 
       <div className="menu-container_desplegable">
@@ -84,12 +84,12 @@ const MenuDesplegable = () => {
 
           <li className="menu-item">
             <div className="menu-desplegable_left">
-              
-                <div className="menu-container-icons">
-                  <LogoutIcon />
-                </div>
-                <a href="/"><h4>Cerrar sesion</h4></a>
-              
+              <div className="menu-container-icons">
+                <LogoutIcon />
+              </div>
+              <a href="/">
+                <h4>Cerrar sesion</h4>
+              </a>
             </div>
           </li>
         </ul>

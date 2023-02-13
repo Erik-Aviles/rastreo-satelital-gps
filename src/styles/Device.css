@@ -1,25 +1,25 @@
 .Device {
   width: 100%;
-  height: calc(100vh - 42px);
+  height: 100vh;
   display: grid;
-  grid-template-rows: 100px auto auto 50px;
+  grid-template-rows: 100px repeat(2, auto) auto;
 }
-.Device-data,
-.Last-updated-data {
-  padding: 20px;
-  display: grid;
-  grid-template-rows: 30px auto;
+.Device-data {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 .Device_subTitle {
+  color: var(--color-light-dark-3);
   font-family: var(--font-family-titles);
-  font-size: var(--font-size-md2);
-  color: var(--color-button-dark);
+  font-size: var(--font-size-xsm);
+  padding-bottom: 20px;
 }
 .Device-conteiner_info {
-  padding: 10px;
-  list-style: none;
+  display: grid;
+  /* padding: 10px 0 10px 10px; */
   border: 1px solid var(--color-light-2);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .data-title {
   padding: 5px;
@@ -30,8 +30,31 @@
   gap: 10px;
   align-items: end;
 }
+.data-title {
+  padding: 5px 5px 5px 20px;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-titleh1);
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.data-title:last-child{
+  padding-bottom: 20px;
+}
+.data-title:first-child{
+  padding-top: 20px;
+}
+
 .data {
   font-family: var(--font-family-text);
   font-size: var(--font-size-xsm);
   font-weight: var(--font-weight-text-long);
+}
+.Continer_button-salir {
+  padding: 0 20px 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }

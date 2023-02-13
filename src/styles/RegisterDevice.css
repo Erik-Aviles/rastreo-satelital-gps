@@ -1,23 +1,29 @@
-.Register-user {
-  width: 100vw;
-  height: 100%;
+.Register-Device {
+  width: 100%;
+  height: 100vh;
   display: grid;
-  grid-template-rows: 70px auto 70px;
-  justify-content: center;
+  grid-template-rows: 100px auto 60px 50px;
+}
+
+.Device_Content-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: var(--font-family-text);
+  padding: 0 20px;
 }
-.active{
-    display: block;
-}
-.inactive{
-    display: none;
+.Device-label-input {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
 .input-design {
   width: 100%;
-  height: 35px;
-  padding: 0 10px;
+  height: 30px;
+  padding-left: 10px;
   border: none;
-  margin-bottom: 15px;
   border-radius: 50px;
   background-color: var(--color-light-1);
   color: var(--color-dark-3);
@@ -29,37 +35,19 @@
   color: var(--color-light-2);
 }
 .label-design {
-  margin-bottom: 5px;
-  padding-left: 10px;
+  padding: 0 0 3px 10px;
   color: var(--color-medium);
   font-size: var(--font-size-sm);
 }
-.Top-frame {
-  border-top-right-radius: 25px;
-}
-
-.Frame-below {
-  border-bottom-left-radius: 25px;
-}
-.frame {
-  width: 100vw;
-  height: 100%;
-  background-color: var(--color-medium);
-}
-.Middle-frame {
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 100px auto 70px;
-}
-.Content-form {
-  width: 80%;
-  height: auto;
+.name-user {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-family-text);
+}
+.container-button-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Button-register {
   width: 136px;
@@ -78,41 +66,45 @@
   box-shadow: 10px 5px 5px var(--color-medium);
   color: var(--color-medium);
 }
-.Button-salir {
+.Register-user_content--select-two {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.Register-user_content--select-two a {
+  color: var(--color-medium);
+}
+.Continer_button-salir {
+  padding: 0 20px 20px 0;
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-end;
 }
+
 @media (min-width: 768px) {
-  .Middle-frame {
+  .Device_Content-form {
+    height: auto;
     display: grid;
-    grid-template-rows: 350px 400px 150px 40px;
-    grid-template-rows: auto;
     justify-content: center;
-    column-gap: 10px;
+    font-family: var(--font-family-text);
+    padding: 0;
   }
-  .Content-form {
-    width: 100%;
+  .Device-label-input {
+    height: 40px;
     display: grid;
-    margin: 20px 0;
-    grid-template-columns: 130px 250px;
-    justify-content: center;
+    grid-template-columns: minmax(120px, max-content) minmax(320px, 320px);
     align-items: center;
-    column-gap: 10px;
   }
   .label-design {
-    text-align: center;
-    font-size: var(--font-size-lg);
+    margin: 0 0 6px;
+    color: var(--color-medium);
+    font-size: var(--font-size-sm);
   }
-  .image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    gap: 6px;
-  }
-  .Button-register {
-    font-size: var(--font-size-lg);
-width: 130px;
+
+  .input-design {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -1,7 +1,12 @@
 .MyDevices {
-  height: calc(100% - 42px);
+  height: 100vh;
   display: grid;
   grid-template-rows: 100px 55px auto 70px;
+}
+.Continer_button-salir {
+  padding: 0 20px 20px 0;
+  display: flex;
+  place-self: end;
 }
 .MyDevices-items {
   border-radius: 10px;
@@ -14,13 +19,11 @@
 
 @media (min-width: 426px) {
   .Content-form {
-
     gap: 15px;
   }
 }
 @media (min-width: 768px) {
   .MyDevices-items {
-
     grid-template-columns: repeat(2, auto);
     justify-content: center;
   }

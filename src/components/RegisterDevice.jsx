@@ -14,22 +14,10 @@ const RegisterDevice = () => {
       <Helmet>
         <title>Registro de dispositivo - Rastreo Satelital</title>
       </Helmet>
-      <section className="Register-user">
-        <div className="Frame-below frame"></div>
-
-        <div className="Middle-frame">
-          <TitleH2>Registro de dispositivo</TitleH2>
-          <form className="Content-form">
-            <label className="label-design" htmlFor="name">
-              Nombre
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Escribir nombre"
-            />
+      <section className="Register-Device">
+        <TitleH2>Registro de dispositivo</TitleH2>
+        <form className="Device_Content-form">
+          <div className="Device-label-input">
             <label className="label-design" htmlFor="placa">
               Placa
             </label>
@@ -41,6 +29,8 @@ const RegisterDevice = () => {
               placeholder="Ej: 'ABC123'"
               required
             />
+          </div>
+          <div className="Device-label-input">
             <label className="label-design" htmlFor="gps-imei">
               Imei del gps
             </label>
@@ -52,8 +42,100 @@ const RegisterDevice = () => {
               placeholder="Ej: '0987654321'"
               required
             />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="placa">
+              Placa
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="placa"
+              name="placa"
+              placeholder="Ej: 'ABC123'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="gps-imei">
+              Imei del gps
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="gps-imei"
+              name="gps-imei"
+              placeholder="Ej: '0987654321'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="placa">
+              Placa
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="placa"
+              name="placa"
+              placeholder="Ej: 'ABC123'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="gps-imei">
+              Imei del gps
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="gps-imei"
+              name="gps-imei"
+              placeholder="Ej: '0987654321'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="placa">
+              Placa
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="placa"
+              name="placa"
+              placeholder="Ej: 'ABC123'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="gps-imei">
+              Imei del gps
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="gps-imei"
+              name="gps-imei"
+              placeholder="Ej: '0987654321'"
+              required
+            />
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="year">
+              Marca
+            </label>
+            <input
+              className="input-design"
+              type="text"
+              id="year"
+              name="year"
+              placeholder="*Ej: ´2020´"
+            />
+          </div>
+          <div className="Device-label-input">
             <label className="label-design" htmlFor="modelo">
-              Modelo
+              Modelo - año
             </label>
             <input
               className="input-design"
@@ -62,6 +144,8 @@ const RegisterDevice = () => {
               name="modelo"
               placeholder="Ej: 'Mazda'"
             />
+          </div>
+          <div className="Device-label-input">
             <label className="label-design" htmlFor="color">
               Color
             </label>
@@ -72,16 +156,8 @@ const RegisterDevice = () => {
               name="color"
               placeholder="Escribir color"
             />
-            <label className="label-design" htmlFor="year">
-              Año
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="year"
-              name="year"
-              placeholder="*Ej: ´2020´"
-            />
+          </div>
+          <div className="Device-label-input">
             <label className="label-design" htmlFor="chasis">
               Chasis
             </label>
@@ -92,29 +168,42 @@ const RegisterDevice = () => {
               name="chasis"
               placeholder="*Ej: ´1234567890´"
             />
-            <SelecctList title="Combustible" options={tipoCombustible} />
-            <div className="image">
-              <label className="label-design" htmlFor="image">
-                Subir foto
-              </label>
-              <input
-                className="input-design"
-                type="file"
-                id="image"
-                name="image"
-              />
-            </div>
-          </form>
-
-          <button
-            className='Button-register'
-            type="button"
-          >
-            Register
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="combustible">
+              Combustible
+            </label>
+            <select
+              className="input-design"
+              name="combustible"
+              id="combustible"
+            >
+              <option value="">Elegir</option>
+              {tipoCombustible.map((el) => (
+                <option key={el} value={el}>
+                  {el}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="Device-label-input">
+            <label className="label-design" htmlFor="image">
+              Imagen dispositivo
+            </label>
+            <input
+              className="input-design"
+              type="file"
+              id="image"
+              name="image"
+            />
+          </div>
+        </form>
+        <div className="container-button-register">
+          <button className="Button-register" type="button">
+            Registrar
           </button>
-          <ButtonSalir />
         </div>
-        <div className="Top-frame frame"></div>
+        <ButtonSalir size={20} />
       </section>
     </>
   );

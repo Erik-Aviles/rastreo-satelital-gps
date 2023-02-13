@@ -1,5 +1,5 @@
 .DeviceItem {
-  min-width: 280px;
+  min-width: 300px;
   max-width: 375px;
   font-family: var(--font-family-text);
   position: relative;

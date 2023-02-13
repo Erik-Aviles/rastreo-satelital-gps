@@ -37,6 +37,7 @@
   --font-weight-text-long: 400;
   --font-weight-text-small: 300;
   --font-size-xlg: 5rem;
+  --font-size-mlg: 3rem;
   --font-size-lg: 2rem;
   --font-size-md: 1.8rem;
   --font-size-md2: 1.6rem;
@@ -47,10 +48,17 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  position: static;
 }
 
 body {
+  overflow-x: hidden;
+  overflow-y: overlay;
+  min-width: 320px;
+  height: 100%;
   background-color: var(--color-layout-2);
+  position: static;
 }
 
 a {

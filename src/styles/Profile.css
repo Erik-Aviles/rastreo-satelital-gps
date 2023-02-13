@@ -1,7 +1,58 @@
 .Profile{
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 100px repeat(2, auto) auto;
 }
-.Profile_my-account{
-    border-bottom: 1px solid black;
-
+.Logo-User{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
+.Profile_data-content{
+    display: flex; 
+    flex-direction: column;
+    padding:  0 20px;
+    gap: 20px;
+}
+.Profile_title{
+    color: var(--color-light-dark-3);
+    font-family: var(--font-family-titles);
+    font-size: var(--font-size-xsm);
+}
+.Profile_personal-data{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid var(--color-light-2);
+    border-radius: 5px;
+}
+.sub-Content{
+    padding: 10px;
+}
+.Profile_subtitle{
+    color: var(--color-light-dark-3);
+    font-weight: var(--font-weight-titleh2);
+    font-family: var(--font-family-titles);
+    padding-bottom: 5px;
+    font-size: var(--font-size-sm);
+}
+.Logo-User,
+.data_user{
+    font-size: var(--font-size-xsm);
+    font-family: var(--font-family-text);
+}
+.border-botton{
+    border-bottom: 1px solid var(--color-light-2);
+}
+.Continer_button-salir {
+    padding: 0 20px 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }

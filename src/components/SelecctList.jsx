@@ -6,7 +6,7 @@ const SelecctList = ({ title, options }) => {
   return (
     <div className="SelecctList">
       <select name={id} id={id}>
-        <option value="">{labelTitle}</option>
+        <option className="SelecctList_option" value="">{labelTitle}</option>
         {options.map(el => <option key={el} value={el}>{el}</option>)}
       </select>
     </div>

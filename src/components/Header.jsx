@@ -24,7 +24,7 @@ const Header = () => {
       </figure>
 
       <Logo />
-      <UserIcon display={width >= 768 ? "block" : "none"} />
+      <UserIcon text='Erika'  display={width >= 768 ? "block" : "none"} />
     </section>
   );
 };

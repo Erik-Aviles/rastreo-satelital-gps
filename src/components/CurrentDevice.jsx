@@ -45,25 +45,25 @@ const CurrentDevice = () => {
         <p className="box1 box">
           {" Placa: "}
           <span>
-            <em>H1342</em>
+            H1342
           </span>
         </p>
         <p className="box2 box">
           {"Velocidad: "}
           <span>
-            <em>80 km/h</em>
+            80 km/h
           </span>
         </p>
         <p className="box3 box">
           {"Duracion: "}
           <span>
-            <em>1:34:00</em>
+            1:34:00
           </span>
         </p>
         <p className="box4 box">
           {"Kilometros: "}
           <span>
-            <em>80 km</em>
+            80 km
           </span>
         </p>
       </div>
