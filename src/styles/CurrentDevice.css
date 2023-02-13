@@ -38,13 +38,18 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-text);
-  font-size: var(--font-size-xsm);
+  font-size: var(--font-size-xxsm);
 }
 
 .address-data {
   padding: 5px 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.address-data_left{
+    display: flex;
+    align-items: center;
 }
 .address-name {
   padding: 0 10px 0 3px;

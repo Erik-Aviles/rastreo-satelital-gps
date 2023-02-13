@@ -22,17 +22,21 @@ const CurrentDevice = () => {
 
       <div className="Dta-current-address">
         <div className="address-data">
-          <AiTwotoneFlag color="green" size={20} />
-          <p className="address-name">
-            Av. Walter Andrade Andrade Andrade Andrade
-          </p>
+          <div className="address-data_left">
+            <AiTwotoneFlag color="green" size={20} />
+            <p className="address-name">
+              Av. Walter Andrade Andrade Andrade Andrade
+            </p>
+          </div>
           <p className="time-data">14:30</p>
         </div>
         <div className="address-data">
-          <AiTwotoneFlag color="black" size={20} />
-          <p className="address-name">
-            Av. Walter Andrade Walter v v Walter v v Walter
-          </p>
+          <div className="address-data_left">
+            <AiTwotoneFlag color="black" size={20} />
+            <p className="address-name">
+              Av. Walter Andrade Walter v v Walter v v Walter
+            </p>
+          </div>
           <p className="time-data">14:30</p>
         </div>
       </div>
