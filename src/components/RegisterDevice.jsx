@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import "../styles/RegisterDevice.css";
 
 import ButtonSalir from "./ButtonSalir";
@@ -9,6 +10,10 @@ import TitleH2 from "./TitleH2";
 const tipoCombustible = ["Gasolina", "Disel", "Eléctrico", "Otro"];
 
 const RegisterDevice = () => {
+  const navegate = useNavigate();
+  const onClicRegisterDevice = () => {
+    navegate("/register-user");
+  };
   return (
     <>
       <Helmet>
@@ -199,7 +204,7 @@ const RegisterDevice = () => {
           </div>
         </form>
         <div className="container-button-register">
-          <button className="Button-register" type="button">
+          <button onClick={onClicRegisterDevice} className="Button-register" type="button">
             Registrar
           </button>
         </div>

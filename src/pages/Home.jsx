@@ -1,29 +1,60 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React, { useState } from "react";
+// import SelecctList from "../components/SelecctList";
 import "../styles/Home.css";
+import {
+  MdOutlineFollowTheSigns,
+  MdOutlineDeliveryDining,
+} from "react-icons/md";
+import { AiOutlineAim } from "react-icons/ai";
+import { GrLastfm } from "react-icons/gr";
+import DeviceStatuses from "../containers/DeviceStatuses";
+import Header from "../components/Header";
+import MenuDesplegable from "../components/MenuDesplegable";
 
+const viewMaps = [
+  "Google clásico",
+  "Google satelite",
+  "Google streest",
+  "Carto",
+  "OSM",
+];
 const Home = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsActive(!isActive);
+  };
+  const style = { size: 20 };
   return (
     <>
-      <Helmet>
-        <title>Home - Rastreo Satelital</title>
-      </Helmet>
+      <Header handleToggleMenu={handleToggleMenu}/>
+    {isActive && <MenuDesplegable handleToggleMenu={handleToggleMenu}/>}
       <section className="Home">
-        <figure className="continer_logo">
-          <img className="logo-image" src="../assets/images/DrawKit Vector Illustration Sleep & Health (5).png" alt="Soy un logo" />
-        </figure>
-        <div className="Home-container">
-          <h1 className="Home-title title">Bienvenido</h1>
-          <p className="Home_welcome">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
-            tempore obcaecati voluptatum illo. Tenetur eius illo deserunt,
-            corporis delectus nihil velit.
-          </p>
-          <div className="Home-container_button">
-            <button className="Home_button button">Register</button>
-            <button className="Home_button button">Login</button>
+        <div className="Home-container_top-frame">
+          <select className="select-map" name="mapa" id="mapa">
+            {viewMaps.map((el) => (
+              <option key={el} value={el}>
+                {el}
+              </option>
+            ))}
+          </select>
+          <div className="group-button-top-left">
+            <div title="Seguir" className="icons">
+              <MdOutlineFollowTheSigns size={style.size} />
+            </div>
+            <div title="Rutas en vivo" className="icons">
+              <MdOutlineDeliveryDining size={style.size} />
+            </div>
+            <div title="Ultima ruta" className="icons">
+              <GrLastfm size={style.size} />
+            </div>
+            <div title="Enfoque" className="icons">
+              <AiOutlineAim size={style.size} />
+            </div>
           </div>
         </div>
+        <div className="Mapa-container">Mapa</div>{/* Aqui deveria ir el mapa */}
+        <DeviceStatuses />
       </section>
     </>
   );

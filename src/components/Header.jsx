@@ -4,7 +4,8 @@ import { AiOutlineBars } from "react-icons/ai";
 import Logo from "./Logo";
 import { UserIcon } from "./Icons";
 
-const Header = () => {
+const Header = ({handleToggleMenu}) => {
+
   const [width, setWidth] = useState(screen.width);
 
   useEffect(() => {
@@ -17,14 +18,13 @@ const Header = () => {
   };
   return (
     <section className="Header">
-      <figure>
-        <a href="/">
-          <AiOutlineBars size={styles.size} color={styles.color} />
-        </a>{" "}
+      <figure onClick={handleToggleMenu}>
+        <AiOutlineBars size={styles.size} color={styles.color} />
       </figure>
-
+     
+      
       <Logo />
-      <UserIcon text='Erika'  display={width >= 768 ? "block" : "none"} />
+      <UserIcon text="Erika" display={width >= 768 ? "block" : "none"} />
     </section>
   );
 };

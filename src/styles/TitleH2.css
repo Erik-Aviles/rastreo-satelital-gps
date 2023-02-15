@@ -11,14 +11,13 @@
   font-size: var(--font-size-md2);
   color: var(--color-medium);
 }
-.Container_Title-h2 figure a {
+.Container_Title-h2 figure,
+.Title-h2 {
   display: flex;
   align-self: center;
   padding-left: 10px;
 }
-.Title-h2 {
-  justify-self: center;
-}
+
 
 @media (min-width: 375px) {
   .Container_Title-h2 {

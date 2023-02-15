@@ -4,10 +4,20 @@ import SelecctList from "./SelecctList";
 import TitleH2 from "./TitleH2";
 import "../styles/RegisterUser.css";
 import ButtonSalir from "./ButtonSalir";
+import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineCheck } from 'react-icons/ai'
 
 const devicesType = ["auto", "Carro", "Otros"];
 
 const RegisterUser = () => {
+  const navegate = useNavigate();
+  const onClicGoRegisterDevice = () => {
+    navegate("/register-device");
+  };
+  const onClicRegisterUser = () => {
+    navegate("/login");
+  };
+
   return (
     <>
       <Helmet>
@@ -111,28 +121,32 @@ const RegisterUser = () => {
               required
             />
           </div>
-
-          <div className="label-input">
-            <label className="label-design" htmlFor='device'>Dispositivo</label>
-            <select className="input-design" name="device" id="device">
-              <option value="">Elegir</option>
-              {devicesType.map((el) => (
-                <option key={el} value={el}>
-                  {el}
-                </option>
-              ))}
-              //{" "}
-            </select>
+          <div className="label-input ">
+            <label className="label-design" htmlFor="device">
+              Dispositivo
+            </label>
+            <div className="input-design">
+              <button
+                onClick={onClicGoRegisterDevice}
+                className="button-register-device"
+                type="button"
+                id="register-device"
+              >
+                Registrar dispositivo
+              </button>
+              <label htmlFor="">ADE-234</label>
+              <AiOutlineCheck color='green'/>
+            </div>
           </div>
         </form>
         <div className="container-button-register">
-          <button className="Button-register" type="button">
-            Registrar
+          <button onClick={onClicRegisterUser} className="Button-register" type="button">
+            Resgistrar
           </button>
         </div>
         <div className="Register-user_content--select-two">
           <p> Ya tienes una cuenta?</p>
-          <a href="/"> Login</a>
+          <Link to="/login"> Login</Link>
         </div>
         <ButtonSalir size={20} />
       </section>

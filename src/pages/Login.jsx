@@ -1,9 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import TitleH2 from "./TitleH2";
+import { NavLink, useNavigate } from "react-router-dom";
+import TitleH2 from "../components/TitleH2";
 import "../styles/Login.css";
 
 const Login = () => {
+  const navegate = useNavigate()
+  const onClickLogin = () => {
+    navegate('/home')
+  }
   return (
     <>
       <Helmet>
@@ -49,11 +54,11 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button className="Button-Login" type="button">Login</button>
+            <button onClick={onClickLogin} className="Button-Login" type="button">Login</button>
           </form>
           <div className="Login_content--select-two">
             <p> No tienes una cuenta?</p>
-            <a href="/"> Registrate</a>
+            <NavLink to='/register-user' className='Nav-login'> Registrate</NavLink>
           </div>
         </div>
         <div className="Frame-below frame"></div>

@@ -1,48 +1,42 @@
 import React from "react";
-import Layout from "../containers/Layout";
-// import Header from "../components/Header";
-// import Home from "../pages/Home";
-// import Mapa from "../containers/Mapa";
-// import CurrentDevice from "../components/CurrentDevice.jsx";
-// import Mesagge from "../components/Mesagge";
-// import Device from "../pages/Device";
-// import AppInformation from "../pages/AppInformation";
-// import History from "../containers/History";
-// import MyDevices from "../containers/MyDevices";
-// import MenuDesplegable from "../pages/MenuDesplegable";
-// import Login from "../components/Login";
-import RegisterUser from "../components/RegisterUser";
-// import RegisterDevice from "../components/RegisterDevice";
-// import Profile from "../containers/Profile";
-// import ButtonsShareLockUnlock from "../containers/ButtonsShareLockUnlock";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../styles/App.css";
-// import ButtonLock from "../components/ButtonLock";
-// import ButtonUnlock from "../components/ButtonUnlock";
+import Layout from "../containers/Layout";
+import Welcome from "../pages/Welcome";
+import Home from "../pages/Home";
+import Device from "../pages/Device";
+import AppInformation from "../pages/AppInformation";
+import History from "../pages/History";
+import MyDevices from "../pages/MyDevices";
+import Login from "../pages/Login";
+import RegisterUser from "../components/RegisterUser";
+import RegisterDevice from "../components/RegisterDevice";
+import Profile from "../pages/Profile";
+import NotFount from "../styles/NotFount";
+import Alerts from "../pages/Alerts";
+// import CurrentDevice from "../components/CurrentDevice.jsx";
 
 const App = () => {
   return (
-    <Layout className="Layout">
-      {/* <Header /> */}
-      {/* <Home /> */}
-      {/* <Login /> */}
-      <RegisterUser />
-      {/* <RegisterDevice />  */}
-      {/* <MenuDesplegable />/ */}
-      {/* <MyDevices /> */}
-      {/* <History /> */}
-      {/* <Alerts /> */}
-      {/* <Profile /> */}
-      {/* <AppInformation /> */}
-      {/* <Device /> */}
-      {/* <Mesagge text="Error" textColor='var(--color-error)'>
-        <ButtonLock size={15} color='var(--color-layout-1)' />
-      </Mesagge> */}
-      {/* <Mesagge text="Satisfactorio" textColor='var(--color-exit)'>
-        <ButtonUnlock size={15} color='var(--color-layout-1)' />
-      </Mesagge> */}
-      {/* <Mapa /> */}
-      {/* <CurrentDevice /> */}
-    </Layout>
+    <BrowserRouter>
+      <Layout className="Layout">
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register-user" element={<RegisterUser />} />{/* Arreglar estilo */}
+          <Route path="/register-device" element={<RegisterDevice />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/my-device" element={<MyDevices />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/alerts" element={<Alerts />} />
+          <Route path="/information" element={<AppInformation />} />
+          <Route path="/device" element={<Device />} /> {/* Arreglar estilo */}
+          <Route path="*" element={<NotFount />} />
+          {/* <Route path="/current-device" element={<CurrentDevice />} />  */}
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 };
 

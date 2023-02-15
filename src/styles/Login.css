@@ -90,8 +90,8 @@
 .Login_content--select-two {
   font-size: var(--font-size-xsm);
 }
-.Login_content--select-two a,
-.Login_content-2--left a {
+.Login_content--select-two .Nav-login,
+.Login_content-2--left .Nav-login {
   color: var(--color-medium);
 }
 .Login_content-2--rigth {
