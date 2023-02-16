@@ -7,7 +7,7 @@ import { MdOutlineHistoryEdu, MdInfoOutline } from "react-icons/md";
 import "../styles/Icons.css";
 
 const styles = {
-  size: 15,
+  size: 20,
   color: "var(--color-light-2)",
 };
 

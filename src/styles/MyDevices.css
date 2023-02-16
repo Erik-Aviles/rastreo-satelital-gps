@@ -1,13 +1,9 @@
 .MyDevices {
   height: 100vh;
   display: grid;
-  grid-template-rows: 100px 55px auto 70px;
+  grid-template-rows: 100px 55px auto;
 }
-.Continer_button-salir {
-  padding: 0 20px 20px 0;
-  display: flex;
-  place-self: end;
-}
+
 .MyDevices-items {
   border-radius: 10px;
   padding-top: 10px;

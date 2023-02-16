@@ -1,5 +1,5 @@
 import React from "react";
-import inicialData from "../components/const/inicialData";
+import inicialData from "../const/inicialData";
 import ShowDeviceTable from "../components/ShowDeviceTable";
 import '../styles/DeviceStatuses.css'
 const DeviceStatuses = () => {

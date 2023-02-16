@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "styled-components";
 import DataTable, { createTheme } from "react-data-table-component";
-import inicialData from "./const/inicialData";
+import inicialData from "../const/inicialData";
 import "../styles/ShowDeviceTable.css";
 
 const customStyles = {

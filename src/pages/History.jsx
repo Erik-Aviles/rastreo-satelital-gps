@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import ButtonSalir from "../components/ButtonSalir";
-import inicialData from "../components/const/inicialData";
+import inicialData from "../const/inicialData";
 import SelecctList from "../components/SelecctList";
 import TitleH2 from "../components/TitleH2";
 import ShowDeviceTable from "../components/ShowDeviceTable";

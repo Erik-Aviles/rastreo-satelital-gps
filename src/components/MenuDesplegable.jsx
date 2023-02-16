@@ -1,8 +1,6 @@
 import React from "react";
-import ButtonSalir from "./ButtonSalir";
-import Logo from "./Logo";
+
 import {
-  UserIcon,
   AlertIcon,
   DeviceIcon,
   HistoryIcon,
@@ -11,80 +9,43 @@ import {
   ForwardIcon,
 } from "./Icons";
 import "../styles/MenuDesplegable.css";
+import { routing } from "../const/routing";
+import { NavLink } from "react-router-dom";
 
-const MenuDesplegable = ({handleToggleMenu}) => {
-  const styles = {
-    size: 30,
-    color: "var(--color-medium)",
-  };
+const MenuDesplegable = () => {
+
   return (
     <section className="Menu">
       <nav className="nav-menu">
         <div className="menu-container_desplegable">
           <ul className="menu_desplegable">
-            <li className="menu-item">
-              <div className="menu-desplegable_left">
-                <div className="menu-container-icons">
-                  <DeviceIcon />
+            {routing.map((route) => (
+              <li key={route.text} className="menu-item">
+                <div className="menu-desplegable_left">
+                  <div className="menu-container-icons">
+                    {route.text === "Mis dispositivos" && <DeviceIcon />}
+                    {route.text === "Historial" && <HistoryIcon />}
+                    {route.text === "Alertas" && <AlertIcon />}
+                    {route.text === "Sobre la APP" && <InfoAppIcon />}
+                    {route.text === "Cerrar sesion" && <LogoutIcon />}
+                  </div>
+                  {route.text === "Cerrar sesion" ? (
+                    <NavLink to={route.to}>
+                      <h4 style={{ color: "var(--color-error)" }}>
+                        {route.text}{" "}
+                      </h4>
+                    </NavLink>
+                  ) : (
+                    <h4>{route.text}</h4>
+                  )}
                 </div>
-                <h4>Mis dispositivos</h4>
-              </div>
-              <a href="/">
-                <div className="menu-desplegable_rigth">
-                  <ForwardIcon />
-                </div>
-              </a>
-            </li>
-            <li className="menu-item">
-              <div className="menu-desplegable_left">
-                <div className="menu-container-icons">
-                  <HistoryIcon />
-                </div>
-                <h4>Historial</h4>
-              </div>
-              <a href="/">
-                <div className="menu-desplegable_rigth">
-                  <ForwardIcon />
-                </div>
-              </a>
-            </li>
-            <li className="menu-item">
-              <div className="menu-desplegable_left">
-                <div className="menu-container-icons">
-                  <AlertIcon />
-                </div>
-                <h4>Alertas</h4>
-              </div>
-              <a href="/">
-                <div className="menu-desplegable_rigth">
-                  <ForwardIcon />
-                </div>
-              </a>
-            </li>
-            <li className="menu-item">
-              <div className="menu-desplegable_left">
-                <div className="menu-container-icons">
-                  <InfoAppIcon />
-                </div>
-                <h4>Informacion de la app</h4>
-              </div>
-              <a href="/">
-                <div className="menu-desplegable_rigth">
-                  <ForwardIcon />
-                </div>
-              </a>
-            </li>
-
-            <li className="menu-item">
-              <div className="menu-desplegable_left">
-                <div className="menu-container-icons">
-                  <LogoutIcon />
-                </div>
-                <a href="/">
-                  <h4>Cerrar sesion</h4>
-                </a>
-              </div>
-            </li>
+                <NavLink to={route.to}>
+                  <div className="menu-desplegable_rigth">
+                    {route.text === "Cerrar sesion" ? null : <ForwardIcon />}
+                  </div>
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

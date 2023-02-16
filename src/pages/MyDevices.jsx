@@ -3,6 +3,7 @@ import ButtonSalir from "../components/ButtonSalir";
 import DeviceItem from "../components/DeviceItem";
 import Search from "../components/Search";
 import TitleH2 from "../components/TitleH2";
+import { inicialDataDevice } from "../const/inicailDataDevice";
 import "../styles/MyDevices.css";
 
 const MyDevices = () => {
@@ -11,16 +12,10 @@ const MyDevices = () => {
       <TitleH2>Mis Dispositivos</TitleH2>
       <Search />
       <div className="MyDevices-items">
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
-        <DeviceItem />
+       {inicialDataDevice.map(device => (
+        <DeviceItem device={device} />
+       ))}
       </div>
-      <ButtonSalir size={20}/>
     </section>
   );
 };

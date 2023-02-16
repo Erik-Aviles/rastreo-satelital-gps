@@ -27,11 +27,11 @@ const App = () => {
           <Route path="/register-user" element={<RegisterUser />} />{/* Arreglar estilo */}
           <Route path="/register-device" element={<RegisterDevice />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/my-device" element={<MyDevices />} />
+          <Route path="/my-devices" element={<MyDevices />} />
+          <Route path="/my-devices/:slug" element={<Device />} /> {/* Arreglar estilo */}
           <Route path="/history" element={<History />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/information" element={<AppInformation />} />
-          <Route path="/device" element={<Device />} /> {/* Arreglar estilo */}
           <Route path="*" element={<NotFount />} />
           {/* <Route path="/current-device" element={<CurrentDevice />} />  */}
         </Routes>
