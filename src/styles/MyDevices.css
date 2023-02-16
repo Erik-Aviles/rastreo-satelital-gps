@@ -1,5 +1,5 @@
 .MyDevices {
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template-rows: 100px 55px auto;
 }

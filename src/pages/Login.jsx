@@ -15,7 +15,7 @@ const Login = () => {
         <title>Login - Rastreo Satelital</title>
       </Helmet>
       <section className="Login">
-        <div className="Top-frame frame">
+        <div className="Top-frame">
           <img
             className="logo-image"
             src="../assets/images/DrawKit Vector Illustration Sleep & Health (5).png"
@@ -24,7 +24,7 @@ const Login = () => {
         </div>
         <div className="Middle-frame">
           <TitleH2>Login</TitleH2>
-          <form className="Content-form">
+          <form className="Login-Content-form">
             <label className="label-design" htmlFor="email">
               Email
             </label>
@@ -61,7 +61,6 @@ const Login = () => {
             <NavLink to='/register-user' className='Nav-login'> Registrate</NavLink>
           </div>
         </div>
-        <div className="Frame-below frame"></div>
       </section>
     </>
   );

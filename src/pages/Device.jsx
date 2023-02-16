@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ButtonSalir from "../components/ButtonSalir";
 import TitleH2 from "../components/TitleH2";
 import { inicialDataDevice } from "../const/inicailDataDevice";
 

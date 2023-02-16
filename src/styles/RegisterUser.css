@@ -1,13 +1,12 @@
 .Register-user {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: grid;
-  grid-template-rows: 100px auto 60px 30px 50px;
+  grid-template-rows: 100px auto 80px 100px;
 }
 
-.Content-form {
-  display: flex;
-  flex-direction: column;
+.Register-user_Content-form {
+  height: 100%;
   font-family: var(--font-family-text);
   padding: 0 20px;
 }
@@ -21,7 +20,8 @@
   flex-direction: row;
   gap: 5px;
 }
-.input-design {
+.Register-user_input-design {
+  margin: 0;
   width: 100%;
   height: 30px;
   padding-left: 10px;
@@ -32,15 +32,14 @@
   font-size: var(--font-size-xsm);
   outline-color: var(--color-light-2);
 }
-.input-design:last-child {
+.Register-user_input-design:last-child {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--font-size-xxsm);
 }
 .input-design::placeholder {
-  font-size: var(--font-size-xsm);
+  font-size: var(--font-size-sm);
   color: var(--color-light-2);
 }
 .label-design {
@@ -54,7 +53,7 @@
   flex-direction: column;
 }
 .button-register-device {
-  font-size: var(--font-size-xxsm);
+  font-size: var(--font-size-sm);
   cursor: pointer;
 }
 .container-button-register {
@@ -72,6 +71,8 @@
   border-radius: 50px;
   box-shadow: 10px 5px 5px var(--color-button-dark);
   color: var(--color-button-dark);
+  font-size: var(--font-size-md);
+
 }
 .Button-register:hover {
   cursor: pointer;
@@ -85,33 +86,47 @@
   display: flex;
   justify-content: center;
   gap: 5px;
+  font-size: var(--font-size-xsm);
+
 }
 .Register-user_content--select-two a {
   color: var(--color-medium);
 }
-.Continer_button-salir {
-  padding: 0 20px 20px 0;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-}
+
 /* @media (min-width: 426px) {
   .Content-form {
     gap: 15px;
   }
 }*/
 @media (min-width: 768px) {
-  .label-input {
-    width: 300px;
-  }
-  .Content-form {
-    width: 100%;
+  .Register-user {
+    height: 100%;
     display: grid;
-    place-content: center;
-    grid-template-columns: minmax(320px, 320px);
+    grid-template-rows: 100px auto 70px 60px;
+  }
+  .Register-user_Content-form {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fill, 67px);
+    grid-template-columns: 400px;
   }
   .Button-register {
     justify-self: end;
+  }
+}
+@media (min-width: 1024px) {
+  .Register-user {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+  }
+
+  .Register-user_Content-form {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 100px;
   }
 }

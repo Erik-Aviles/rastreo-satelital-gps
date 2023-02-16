@@ -21,13 +21,13 @@ const RegisterDevice = () => {
       </Helmet>
       <section className="Register-Device">
         <TitleH2>Registro de dispositivo</TitleH2>
-        <form className="Device_Content-form">
+        <form className="Register-Device_Content-form">
           <div className="Device-label-input">
             <label className="label-design" htmlFor="placa">
               Placa
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="placa"
               name="placa"
@@ -40,85 +40,7 @@ const RegisterDevice = () => {
               Imei del gps
             </label>
             <input
-              className="input-design"
-              type="text"
-              id="gps-imei"
-              name="gps-imei"
-              placeholder="Ej: '0987654321'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="placa">
-              Placa
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="placa"
-              name="placa"
-              placeholder="Ej: 'ABC123'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="gps-imei">
-              Imei del gps
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="gps-imei"
-              name="gps-imei"
-              placeholder="Ej: '0987654321'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="placa">
-              Placa
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="placa"
-              name="placa"
-              placeholder="Ej: 'ABC123'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="gps-imei">
-              Imei del gps
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="gps-imei"
-              name="gps-imei"
-              placeholder="Ej: '0987654321'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="placa">
-              Placa
-            </label>
-            <input
-              className="input-design"
-              type="text"
-              id="placa"
-              name="placa"
-              placeholder="Ej: 'ABC123'"
-              required
-            />
-          </div>
-          <div className="Device-label-input">
-            <label className="label-design" htmlFor="gps-imei">
-              Imei del gps
-            </label>
-            <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="gps-imei"
               name="gps-imei"
@@ -131,7 +53,7 @@ const RegisterDevice = () => {
               Marca
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="year"
               name="year"
@@ -143,7 +65,7 @@ const RegisterDevice = () => {
               Modelo - año
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="modelo"
               name="modelo"
@@ -155,7 +77,7 @@ const RegisterDevice = () => {
               Color
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="color"
               name="color"
@@ -167,7 +89,7 @@ const RegisterDevice = () => {
               Chasis
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="text"
               id="chasis"
               name="chasis"
@@ -179,7 +101,7 @@ const RegisterDevice = () => {
               Combustible
             </label>
             <select
-              className="input-design"
+              className="Register-device_input-design"
               name="combustible"
               id="combustible"
             >
@@ -196,7 +118,7 @@ const RegisterDevice = () => {
               Imagen dispositivo
             </label>
             <input
-              className="input-design"
+              className="Register-device_input-design"
               type="file"
               id="image"
               name="image"
@@ -208,7 +130,6 @@ const RegisterDevice = () => {
             Registrar
           </button>
         </div>
-        <ButtonSalir size={20} />
       </section>
     </>
   );

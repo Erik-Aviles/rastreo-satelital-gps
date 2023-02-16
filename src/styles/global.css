@@ -49,16 +49,12 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  position: static;
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: overlay;
   min-width: 320px;
   height: 100%;
   background-color: var(--color-layout-2);
-  position: static;
 }
 
 a {

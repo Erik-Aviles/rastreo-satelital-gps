@@ -5,13 +5,12 @@
   grid-template-rows: 100px auto;
   justify-content: center;
 }
-.Device-container{
+.Device-container {
   display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 270px);
 }
 .Device-data {
   height: auto;
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
@@ -25,26 +24,19 @@
 .Device-conteiner_info {
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(auto-fill, 42px);
+  grid-template-rows: repeat(auto-fill, 28px);
   border: 1px solid var(--color-light-2);
   border-radius: 5px;
-  margin: 20px 0;
-
 }
 .data-title {
   width: auto;
-  height: 42px;
-  padding: 5px 5px 5px 20px;
+  padding-left: 20px;
   font-family: var(--font-family-text);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-titleh1);
   display: flex;
   gap: 10px;
   align-items: end;
-}
-.data-title:last-child {
-
-  margin-bottom:  20px;
 }
 
 .data {
@@ -53,16 +45,18 @@
   font-weight: var(--font-weight-text-long);
 }
 @media (min-width: 768px) {
-  .Device-container{
+  .Device-container {
+    height: 280px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: auto;
   }
+  .Device-conteiner_info {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 30px);
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1024px) {
-  .MyDevices-items {
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-  }
 }

@@ -1,40 +1,31 @@
 .Login {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: auto;
   display: grid;
-  grid-template-rows: 210px auto 70px;
-  justify-content: center;
-  align-items: center;
-}
-.logo-image {
-  object-fit: contain;
+  grid-template-rows: 210px auto;
 }
 .Top-frame {
   display: flex;
   justify-content: center;
   border-bottom-left-radius: 25px;
-}
-
-.Frame-below {
-  border-top-right-radius: 25px;
-}
-.frame {
-  width: 100vw;
-  height: 100%;
   background-color: var(--color-medium);
 }
+.logo-image {
+  object-fit: contain;
+}
+
 .Middle-frame {
-  width: 100vw;
   height: 100%;
   display: grid;
-  justify-items: center;
-  grid-template-rows: 100px auto 70px;
+  grid-template-rows: 100px auto 100px;
 }
-.Content-form {
+.Login-Content-form {
+  margin: 0 auto;
   width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: var(--font-family-text);
 }
 .label-design {
@@ -62,9 +53,7 @@
 .Button-Login {
   width: 136px;
   height: 35px;
-  align-self: center;
-  margin: 50px 0;
-
+  margin: 20px auto;
   border: 1px solid var(--color-button-dark);
   border-radius: 50px;
   box-shadow: 10px 5px 5px var(--color-button-dark);
@@ -83,7 +72,7 @@
 }
 .Login_content--select-two {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 .Login_content--select-one,
@@ -101,10 +90,13 @@
   gap: 5px;
 }
 @media (min-width: 768px) {
-  .Login {
-    justify-items: center;
-  }
   .Middle-frame {
     max-width: 394px;
+  }
+}
+@media (min-width: 1024px) {
+  .Login {
+    display: grid;
+    grid-template-rows: 135px auto;
   }
 }

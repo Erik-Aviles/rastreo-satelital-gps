@@ -25,14 +25,14 @@ const RegisterUser = () => {
       </Helmet>
       <section className="Register-user">
         <TitleH2>Registro de Usuario</TitleH2>
-        <form className="Content-form">
+        <form className="Register-user_Content-form">
           <div className=" label-input">
             <div className="name-user">
               <label className="label-design" htmlFor="name">
                 Nombres
               </label>
               <input
-                className="input-design"
+                className="Register-user_input-design"
                 type="text"
                 id="name"
                 name="name"
@@ -45,7 +45,7 @@ const RegisterUser = () => {
                 Apellidos
               </label>
               <input
-                className="input-design"
+                className="Register-user_input-design"
                 type="text"
                 id="apellido"
                 name="apellido"
@@ -59,7 +59,7 @@ const RegisterUser = () => {
               Email
             </label>
             <input
-              className="input-design"
+              className="Register-user_input-design"
               type="email"
               id="email"
               name="email"
@@ -73,7 +73,7 @@ const RegisterUser = () => {
               Direccion
             </label>
             <input
-              className="input-design"
+              className="Register-user_input-design"
               type="text"
               id="adrdress"
               name="adrdress"
@@ -86,7 +86,7 @@ const RegisterUser = () => {
               Celular
             </label>
             <input
-              className="input-design"
+              className="Register-user_input-design"
               type="text"
               id="phono"
               name="phono"
@@ -100,7 +100,7 @@ const RegisterUser = () => {
               Contraseña
             </label>
             <input
-              className="input-design"
+              className="Register-user_input-design"
               type="password"
               id="password"
               name="password"
@@ -113,7 +113,7 @@ const RegisterUser = () => {
               Confirmar Contraseña
             </label>
             <input
-              className="input-design"
+              className="Register-user_input-design"
               type="password"
               id="confir-password"
               name="confir-password"
@@ -125,7 +125,7 @@ const RegisterUser = () => {
             <label className="label-design" htmlFor="device">
               Dispositivo
             </label>
-            <div className="input-design">
+            <div className="Register-user_input-design">
               <button
                 onClick={onClicGoRegisterDevice}
                 className="button-register-device"
@@ -148,7 +148,6 @@ const RegisterUser = () => {
           <p> Ya tienes una cuenta?</p>
           <Link to="/login"> Login</Link>
         </div>
-        <ButtonSalir size={20} />
       </section>
     </>
   );
