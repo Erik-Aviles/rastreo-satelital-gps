@@ -1,5 +1,6 @@
-.Type-Alerts{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.Type-Alerts {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

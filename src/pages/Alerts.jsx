@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonSalir from "../components/ButtonSalir";
 import TitleH2 from "../components/TitleH2";
 import TypeAlert from "../components/TypeAlert";
 import "../styles/Alerts.css";
@@ -21,7 +20,6 @@ const Alerts = () => {
           <TypeAlert key={`alert-${title}`} title={title} />
         ))}
       </div>
-      <ButtonSalir size={20}/>
     </section>
   );
 };

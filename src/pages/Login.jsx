@@ -22,14 +22,14 @@ const Login = () => {
             alt="Soy un logo"
           />
         </div>
-        <div className="Middle-frame">
+        <div className="Login-Middle-frame">
           <TitleH2>Login</TitleH2>
           <form className="Login-Content-form">
             <label className="label-design" htmlFor="email">
               Email
             </label>
             <input
-              className="input-design"
+              className="Login-input-design"
               type="email"
               id="email"
               placeholder="hello@dayli.com"
@@ -38,7 +38,7 @@ const Login = () => {
               Password
             </label>
             <input
-              className="input-design"
+              className="Login-input-design"
               type="password"
               id="password"
               placeholder="**********"
@@ -54,8 +54,8 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button onClick={onClickLogin} className="Button-Login" type="button">Login</button>
           </form>
+          <button onClick={onClickLogin} className="Button-Login" type="button">Login</button>
           <div className="Login_content--select-two">
             <p> No tienes una cuenta?</p>
             <NavLink to='/register-user' className='Nav-login'> Registrate</NavLink>

@@ -4,7 +4,6 @@
   display: grid;
   grid-template-rows: 100px auto auto 70px;
 }
-
 .Register-user_Content-form {
   height: 100%;
   font-family: var(--font-family-text);
@@ -73,7 +72,6 @@
   box-shadow: 10px 5px 5px var(--color-button-dark);
   color: var(--color-button-dark);
   font-size: var(--font-size-md);
-
 }
 .Button-register:hover {
   cursor: pointer;
@@ -88,7 +86,6 @@
   justify-content: center;
   gap: 5px;
   font-size: var(--font-size-xsm);
-
 }
 .Register-user_content--select-two a {
   color: var(--color-medium);
