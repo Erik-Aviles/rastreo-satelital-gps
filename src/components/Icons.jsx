@@ -4,24 +4,16 @@ import { AiOutlineBell } from "react-icons/ai";
 import { IoChevronForwardSharp, IoLogOutOutline } from "react-icons/io5";
 import { RiSdCardMiniLine } from "react-icons/ri";
 import { MdOutlineHistoryEdu, MdInfoOutline } from "react-icons/md";
-import "../styles/Icons.css";
+// import "../styles/Icons.css";
 
 const styles = {
   size: 20,
   color: "var(--color-light-2)",
 };
 
-const UserIcon = ({ display, text }) => {
-  return (
-    <figure className="Logo-User-container_icons">
-      <p style={{ display: display }}>{text}</p>
-      <a className="user-icon" href="/">
-        <CiUser size={25} color={"var(--color-medium)"} />
-      </a>
-    </figure>
-  );
+const UserIcon = () => {
+  return  <CiUser size={28} color={"var(--color-medium)"} />;
 };
-
 const DeviceIcon = () => {
   return <RiSdCardMiniLine size={styles.size} color={styles.color} />;
 };

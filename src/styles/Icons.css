@@ -4,7 +4,6 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 5px;
 }
 .Logo-User-container_icons p {
   font-family: var(--font-family-text);

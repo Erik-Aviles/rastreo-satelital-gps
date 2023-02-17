@@ -10,6 +10,7 @@ import { GrLastfm } from "react-icons/gr";
 import DeviceStatuses from "../containers/DeviceStatuses";
 import Header from "../components/Header";
 import MenuDesplegable from "../components/MenuDesplegable";
+import { Helmet } from "react-helmet";
 
 const viewMaps = [
   "Google clásico",
@@ -27,8 +28,11 @@ const Home = () => {
   const style = { size: 20 };
   return (
     <>
-      <Header handleToggleMenu={handleToggleMenu}/>
-    {isActive && <MenuDesplegable handleToggleMenu={handleToggleMenu}/>}
+      <Helmet>
+        <title>Inicio - Rastreo Satelital</title>
+      </Helmet>
+      <Header handleToggleMenu={handleToggleMenu} />
+      {isActive && <MenuDesplegable handleToggleMenu={handleToggleMenu} />}
       <section className="Home">
         <div className="Home-container_top-frame">
           <select className="select-map" name="mapa" id="mapa">
@@ -53,7 +57,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="Mapa-container">Mapa</div>{/* Aqui deveria ir el mapa */}
+        <div className="Mapa-container">Mapa</div>
+        {/* Aqui deveria ir el mapa */}
         <DeviceStatuses />
       </section>
     </>

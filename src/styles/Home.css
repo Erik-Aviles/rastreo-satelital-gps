@@ -1,10 +1,10 @@
 .Home {
   position: relative;
   width: 100%;
-  height: auto;
+  height: calc(100vh - 50px);
   display: grid;
   align-items: center;
-  grid-template-rows: 45px auto 120px;
+  grid-template-rows: 45px auto 110px;
 }
 .Home-container_top-frame {
   width: 100vw;

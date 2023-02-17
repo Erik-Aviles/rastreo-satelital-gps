@@ -32,7 +32,7 @@ const MenuDesplegable = () => {
                   {route.text === "Cerrar sesion" ? (
                     <NavLink to={route.to}>
                       <h4 style={{ color: "var(--color-error)" }}>
-                        {route.text}{" "}
+                        {route.text}
                       </h4>
                     </NavLink>
                   ) : (

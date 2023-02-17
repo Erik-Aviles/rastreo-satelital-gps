@@ -8,18 +8,8 @@
 .Item-info {
   font-size: var(--font-size-xsm);
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  border: 1px solid var(--color-button-medium);
-  border-bottom: 5px solid var(--color-button-medium);
-  border-radius: 5px;
-}
-.Item-info {
-  font-size: var(--font-size-xsm);
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 16px repeat(2, 14px) 31px;
   gap: 3px;
   border: 1px solid var(--color-button-medium);
   border-bottom: 5px solid var(--color-button-medium);

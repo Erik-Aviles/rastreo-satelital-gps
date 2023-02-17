@@ -37,7 +37,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <ButtonSalir size={20} color="var(--color-dark-3)" />
     </div>
   );
 };
