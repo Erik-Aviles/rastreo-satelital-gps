@@ -139,7 +139,7 @@ const RegisterUser = () => {
             </div>
           </div>
         </form>
-        <div className="container-button-register">
+        <div className="User_container-button-register">
           <button onClick={onClicRegisterUser} className="Button-register" type="button">
             Resgistrar
           </button>

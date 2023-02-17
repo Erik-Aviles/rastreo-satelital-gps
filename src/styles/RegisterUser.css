@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-rows: 100px auto 80px 100px;
+  grid-template-rows: 100px auto auto 70px;
 }
 
 .Register-user_Content-form {
@@ -56,10 +56,11 @@
   font-size: var(--font-size-sm);
   cursor: pointer;
 }
-.container-button-register {
+.User_container-button-register {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 .Button-register {
   width: 136px;
